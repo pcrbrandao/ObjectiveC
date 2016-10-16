@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002614B31D9B37EA00E5EC2C /* HeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 002614B21D9B37EA00E5EC2C /* HeaderCell.m */; };
+		002614B61D9B41A200E5EC2C /* ReposCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 002614B51D9B41A200E5EC2C /* ReposCell.m */; };
+		00329E4B1D99E74700171BB7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 00329E4A1D99E74700171BB7 /* .gitignore */; };
+		0056F84A1D9D356B001DE0A1 /* Loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0056F8491D9D356B001DE0A1 /* Loading.storyboard */; };
+		0056F84D1D9D3673001DE0A1 /* LoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0056F84C1D9D3673001DE0A1 /* LoadViewController.m */; };
+		0056F8931D9D5DEB001DE0A1 /* splitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0056F8921D9D5DEB001DE0A1 /* splitViewController.m */; };
+		0063A8F91D99F1D800AF6ECF /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063A8F81D99F1D800AF6ECF /* Controller.m */; };
+		0063A8FB1D99F77500AF6ECF /* GitPopJavaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063A8FA1D99F77500AF6ECF /* GitPopJavaTest.m */; };
+		0063A9001D9A057E00AF6ECF /* Repositorio.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063A8FF1D9A057E00AF6ECF /* Repositorio.m */; };
+		0063A9031D9A059E00AF6ECF /* PullRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063A9021D9A059E00AF6ECF /* PullRequest.m */; };
+		0063A90C1D9A05ED00AF6ECF /* Autor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063A90B1D9A05ED00AF6ECF /* Autor.m */; };
+		008DA6601D9C17FB006628BB /* PullCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 008DA65F1D9C17FB006628BB /* PullCell.m */; };
+		008DA6661D9CC2DB006628BB /* FooterPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 008DA6651D9CC2DB006628BB /* FooterPageCell.m */; };
+		00A21C1A1D99E58F00177B4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A21C191D99E58F00177B4B /* main.m */; };
+		00A21C1D1D99E58F00177B4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A21C1C1D99E58F00177B4B /* AppDelegate.m */; };
+		00A21C201D99E58F00177B4B /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A21C1F1D99E58F00177B4B /* MasterViewController.m */; };
+		00A21C231D99E58F00177B4B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A21C221D99E58F00177B4B /* DetailViewController.m */; };
+		00A21C261D99E58F00177B4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A21C241D99E58F00177B4B /* Main.storyboard */; };
+		00A21C281D99E58F00177B4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A21C271D99E58F00177B4B /* Assets.xcassets */; };
+		00A21C2B1D99E58F00177B4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A21C291D99E58F00177B4B /* LaunchScreen.storyboard */; };
+		00A21C411D99E59000177B4B /* GitPopJavaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A21C401D99E59000177B4B /* GitPopJavaUITests.m */; };
+		00A21C511D99E63200177B4B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 00A21C501D99E63200177B4B /* Podfile */; };
+		2048EBEBA935221207B749A6 /* Pods_GitPopJavaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E9AAC9E100774DA92F8D84 /* Pods_GitPopJavaTests.framework */; };
+		77446F2E3390A4B4CA9A973C /* Pods_GitPopJava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785F63EA533A8921B1741F0 /* Pods_GitPopJava.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00A21C321D99E59000177B4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00A21C0D1D99E58F00177B4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00A21C141D99E58F00177B4B;
+			remoteInfo = GitPopJava;
+		};
+		00A21C3D1D99E59000177B4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00A21C0D1D99E58F00177B4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00A21C141D99E58F00177B4B;
+			remoteInfo = GitPopJava;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002614B11D9B37EA00E5EC2C /* HeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCell.h; sourceTree = "<group>"; };
+		002614B21D9B37EA00E5EC2C /* HeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderCell.m; sourceTree = "<group>"; };
+		002614B41D9B41A200E5EC2C /* ReposCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReposCell.h; sourceTree = "<group>"; };
+		002614B51D9B41A200E5EC2C /* ReposCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReposCell.m; sourceTree = "<group>"; };
+		00329E4A1D99E74700171BB7 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
+		00329E4E1D99EC7600171BB7 /* OctoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OctoKit.framework; path = "../../Library/Developer/Xcode/DerivedData/GitPopJava-hjinsgfxrfcctjaluyaxjqpvdcxl/Build/Products/Debug-iphonesimulator/OctoKit/OctoKit.framework"; sourceTree = "<group>"; };
+		0056F8491D9D356B001DE0A1 /* Loading.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Loading.storyboard; sourceTree = "<group>"; };
+		0056F84B1D9D3673001DE0A1 /* LoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadViewController.h; sourceTree = "<group>"; };
+		0056F84C1D9D3673001DE0A1 /* LoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadViewController.m; sourceTree = "<group>"; };
+		0056F8911D9D5DEB001DE0A1 /* splitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = splitViewController.h; sourceTree = "<group>"; };
+		0056F8921D9D5DEB001DE0A1 /* splitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = splitViewController.m; sourceTree = "<group>"; };
+		0063A8F71D99F1D800AF6ECF /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		0063A8F81D99F1D800AF6ECF /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		0063A8FA1D99F77500AF6ECF /* GitPopJavaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitPopJavaTest.m; sourceTree = "<group>"; };
+		0063A8FE1D9A057E00AF6ECF /* Repositorio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repositorio.h; sourceTree = "<group>"; };
+		0063A8FF1D9A057E00AF6ECF /* Repositorio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repositorio.m; sourceTree = "<group>"; };
+		0063A9011D9A059E00AF6ECF /* PullRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRequest.h; sourceTree = "<group>"; };
+		0063A9021D9A059E00AF6ECF /* PullRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRequest.m; sourceTree = "<group>"; };
+		0063A90A1D9A05ED00AF6ECF /* Autor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Autor.h; sourceTree = "<group>"; };
+		0063A90B1D9A05ED00AF6ECF /* Autor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Autor.m; sourceTree = "<group>"; };
+		008DA65E1D9C17FB006628BB /* PullCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullCell.h; sourceTree = "<group>"; };
+		008DA65F1D9C17FB006628BB /* PullCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullCell.m; sourceTree = "<group>"; };
+		008DA6641D9CC2DB006628BB /* FooterPageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooterPageCell.h; sourceTree = "<group>"; };
+		008DA6651D9CC2DB006628BB /* FooterPageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooterPageCell.m; sourceTree = "<group>"; };
+		00A21C151D99E58F00177B4B /* GitPopJava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitPopJava.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A21C191D99E58F00177B4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00A21C1B1D99E58F00177B4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00A21C1C1D99E58F00177B4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00A21C1E1D99E58F00177B4B /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		00A21C1F1D99E58F00177B4B /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		00A21C211D99E58F00177B4B /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		00A21C221D99E58F00177B4B /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		00A21C251D99E58F00177B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00A21C271D99E58F00177B4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00A21C2A1D99E58F00177B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00A21C2C1D99E58F00177B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A21C311D99E59000177B4B /* GitPopJavaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitPopJavaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A21C371D99E59000177B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A21C3C1D99E59000177B4B /* GitPopJavaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitPopJavaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A21C401D99E59000177B4B /* GitPopJavaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitPopJavaUITests.m; sourceTree = "<group>"; };
+		00A21C421D99E59000177B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A21C501D99E63200177B4B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0C843E339275AB88E89A4E51 /* Pods-GitPopJava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitPopJava.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitPopJava/Pods-GitPopJava.debug.xcconfig"; sourceTree = "<group>"; };
+		110A3AD6C6B4DD42C122E976 /* Pods-GitPopJavaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitPopJavaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitPopJavaTests/Pods-GitPopJavaTests.release.xcconfig"; sourceTree = "<group>"; };
+		3A4E77CC883660F3BDCBC314 /* Pods-GitPopJava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitPopJava.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitPopJava/Pods-GitPopJava.release.xcconfig"; sourceTree = "<group>"; };
+		76EEB10AF25927DD008A310C /* Pods-GitPopJavaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitPopJavaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitPopJavaTests/Pods-GitPopJavaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B785F63EA533A8921B1741F0 /* Pods_GitPopJava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitPopJava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E9AAC9E100774DA92F8D84 /* Pods_GitPopJavaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitPopJavaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00A21C121D99E58F00177B4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77446F2E3390A4B4CA9A973C /* Pods_GitPopJava.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A21C2E1D99E59000177B4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2048EBEBA935221207B749A6 /* Pods_GitPopJavaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A21C391D99E59000177B4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00329E4C1D99E7E500171BB7 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				00A21C2C1D99E58F00177B4B /* Info.plist */,
+				00329E4A1D99E74700171BB7 /* .gitignore */,
+				00A21C501D99E63200177B4B /* Podfile */,
+				00A21C1B1D99E58F00177B4B /* AppDelegate.h */,
+				00A21C1C1D99E58F00177B4B /* AppDelegate.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		00329E4D1D99E81300171BB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0056F8951D9D66D7001DE0A1 /* Cells */,
+				0056F8941D9D66BF001DE0A1 /* Storyboards */,
+				00A21C1E1D99E58F00177B4B /* MasterViewController.h */,
+				00A21C1F1D99E58F00177B4B /* MasterViewController.m */,
+				00A21C211D99E58F00177B4B /* DetailViewController.h */,
+				00A21C221D99E58F00177B4B /* DetailViewController.m */,
+				0056F84B1D9D3673001DE0A1 /* LoadViewController.h */,
+				0056F84C1D9D3673001DE0A1 /* LoadViewController.m */,
+				0056F8911D9D5DEB001DE0A1 /* splitViewController.h */,
+				0056F8921D9D5DEB001DE0A1 /* splitViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0056F8941D9D66BF001DE0A1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				00A21C241D99E58F00177B4B /* Main.storyboard */,
+				00A21C291D99E58F00177B4B /* LaunchScreen.storyboard */,
+				0056F8491D9D356B001DE0A1 /* Loading.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		0056F8951D9D66D7001DE0A1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				002614B11D9B37EA00E5EC2C /* HeaderCell.h */,
+				002614B21D9B37EA00E5EC2C /* HeaderCell.m */,
+				002614B41D9B41A200E5EC2C /* ReposCell.h */,
+				002614B51D9B41A200E5EC2C /* ReposCell.m */,
+				008DA65E1D9C17FB006628BB /* PullCell.h */,
+				008DA65F1D9C17FB006628BB /* PullCell.m */,
+				008DA6641D9CC2DB006628BB /* FooterPageCell.h */,
+				008DA6651D9CC2DB006628BB /* FooterPageCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		0063A8FC1D9A054A00AF6ECF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00A21C271D99E58F00177B4B /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0063A8FD1D9A055C00AF6ECF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0063A8FE1D9A057E00AF6ECF /* Repositorio.h */,
+				0063A8FF1D9A057E00AF6ECF /* Repositorio.m */,
+				0063A9011D9A059E00AF6ECF /* PullRequest.h */,
+				0063A9021D9A059E00AF6ECF /* PullRequest.m */,
+				0063A90A1D9A05ED00AF6ECF /* Autor.h */,
+				0063A90B1D9A05ED00AF6ECF /* Autor.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		00A21C0C1D99E58F00177B4B = {
+			isa = PBXGroup;
+			children = (
+				00A21C171D99E58F00177B4B /* GitPopJava */,
+				00A21C341D99E59000177B4B /* GitPopJavaTests */,
+				00A21C3F1D99E59000177B4B /* GitPopJavaUITests */,
+				00A21C161D99E58F00177B4B /* Products */,
+				170CCF82CA7AF95F524531C0 /* Pods */,
+				AE6736A4ED286AFB66B276C2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00A21C161D99E58F00177B4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00A21C151D99E58F00177B4B /* GitPopJava.app */,
+				00A21C311D99E59000177B4B /* GitPopJavaTests.xctest */,
+				00A21C3C1D99E59000177B4B /* GitPopJavaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00A21C171D99E58F00177B4B /* GitPopJava */ = {
+			isa = PBXGroup;
+			children = (
+				0063A8FD1D9A055C00AF6ECF /* Models */,
+				00A21C181D99E58F00177B4B /* Supporting Files */,
+				00329E4C1D99E7E500171BB7 /* Config */,
+				00329E4D1D99E81300171BB7 /* Views */,
+				0063A8FC1D9A054A00AF6ECF /* Resources */,
+				0063A8F71D99F1D800AF6ECF /* Controller.h */,
+				0063A8F81D99F1D800AF6ECF /* Controller.m */,
+			);
+			path = GitPopJava;
+			sourceTree = "<group>";
+		};
+		00A21C181D99E58F00177B4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00A21C191D99E58F00177B4B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00A21C341D99E59000177B4B /* GitPopJavaTests */ = {
+			isa = PBXGroup;
+			children = (
+				00A21C371D99E59000177B4B /* Info.plist */,
+				0063A8FA1D99F77500AF6ECF /* GitPopJavaTest.m */,
+			);
+			path = GitPopJavaTests;
+			sourceTree = "<group>";
+		};
+		00A21C3F1D99E59000177B4B /* GitPopJavaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00A21C401D99E59000177B4B /* GitPopJavaUITests.m */,
+				00A21C421D99E59000177B4B /* Info.plist */,
+			);
+			path = GitPopJavaUITests;
+			sourceTree = "<group>";
+		};
+		170CCF82CA7AF95F524531C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C843E339275AB88E89A4E51 /* Pods-GitPopJava.debug.xcconfig */,
+				3A4E77CC883660F3BDCBC314 /* Pods-GitPopJava.release.xcconfig */,
+				76EEB10AF25927DD008A310C /* Pods-GitPopJavaTests.debug.xcconfig */,
+				110A3AD6C6B4DD42C122E976 /* Pods-GitPopJavaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE6736A4ED286AFB66B276C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00329E4E1D99EC7600171BB7 /* OctoKit.framework */,
+				B785F63EA533A8921B1741F0 /* Pods_GitPopJava.framework */,
+				E6E9AAC9E100774DA92F8D84 /* Pods_GitPopJavaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00A21C141D99E58F00177B4B /* GitPopJava */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A21C451D99E59000177B4B /* Build configuration list for PBXNativeTarget "GitPopJava" */;
+			buildPhases = (
+				BAA4DF59430610C3B9B2C478 /* [CP] Check Pods Manifest.lock */,
+				00A21C111D99E58F00177B4B /* Sources */,
+				00A21C121D99E58F00177B4B /* Frameworks */,
+				00A21C131D99E58F00177B4B /* Resources */,
+				E2BA8A0245457D076C858998 /* [CP] Embed Pods Frameworks */,
+				72D7E9ED58AE47DF6B062F09 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GitPopJava;
+			productName = GitPopJava;
+			productReference = 00A21C151D99E58F00177B4B /* GitPopJava.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00A21C301D99E59000177B4B /* GitPopJavaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A21C481D99E59000177B4B /* Build configuration list for PBXNativeTarget "GitPopJavaTests" */;
+			buildPhases = (
+				12E419EF6FA1727B407746D0 /* [CP] Check Pods Manifest.lock */,
+				00A21C2D1D99E59000177B4B /* Sources */,
+				00A21C2E1D99E59000177B4B /* Frameworks */,
+				00A21C2F1D99E59000177B4B /* Resources */,
+				56B37059C64562BB975B254F /* [CP] Embed Pods Frameworks */,
+				F640FC305457EB6A7D0EF169 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00A21C331D99E59000177B4B /* PBXTargetDependency */,
+			);
+			name = GitPopJavaTests;
+			productName = GitPopJavaTests;
+			productReference = 00A21C311D99E59000177B4B /* GitPopJavaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00A21C3B1D99E59000177B4B /* GitPopJavaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A21C4B1D99E59000177B4B /* Build configuration list for PBXNativeTarget "GitPopJavaUITests" */;
+			buildPhases = (
+				00A21C381D99E59000177B4B /* Sources */,
+				00A21C391D99E59000177B4B /* Frameworks */,
+				00A21C3A1D99E59000177B4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00A21C3E1D99E59000177B4B /* PBXTargetDependency */,
+			);
+			name = GitPopJavaUITests;
+			productName = GitPopJavaUITests;
+			productReference = 00A21C3C1D99E59000177B4B /* GitPopJavaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00A21C0D1D99E58F00177B4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Pedro Brandão";
+				TargetAttributes = {
+					00A21C141D99E58F00177B4B = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = U3A2WCJ8XS;
+					};
+					00A21C301D99E59000177B4B = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = U3A2WCJ8XS;
+						TestTargetID = 00A21C141D99E58F00177B4B;
+					};
+					00A21C3B1D99E59000177B4B = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = U3A2WCJ8XS;
+						TestTargetID = 00A21C141D99E58F00177B4B;
+					};
+				};
+			};
+			buildConfigurationList = 00A21C101D99E58F00177B4B /* Build configuration list for PBXProject "GitPopJava" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00A21C0C1D99E58F00177B4B;
+			productRefGroup = 00A21C161D99E58F00177B4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00A21C141D99E58F00177B4B /* GitPopJava */,
+				00A21C301D99E59000177B4B /* GitPopJavaTests */,
+				00A21C3B1D99E59000177B4B /* GitPopJavaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00A21C131D99E58F00177B4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00329E4B1D99E74700171BB7 /* .gitignore in Resources */,
+				00A21C2B1D99E58F00177B4B /* LaunchScreen.storyboard in Resources */,
+				00A21C281D99E58F00177B4B /* Assets.xcassets in Resources */,
+				0056F84A1D9D356B001DE0A1 /* Loading.storyboard in Resources */,
+				00A21C511D99E63200177B4B /* Podfile in Resources */,
+				00A21C261D99E58F00177B4B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A21C2F1D99E59000177B4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A21C3A1D99E59000177B4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12E419EF6FA1727B407746D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		56B37059C64562BB975B254F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitPopJavaTests/Pods-GitPopJavaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72D7E9ED58AE47DF6B062F09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitPopJava/Pods-GitPopJava-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAA4DF59430610C3B9B2C478 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2BA8A0245457D076C858998 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitPopJava/Pods-GitPopJava-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F640FC305457EB6A7D0EF169 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitPopJavaTests/Pods-GitPopJavaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00A21C111D99E58F00177B4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A21C1D1D99E58F00177B4B /* AppDelegate.m in Sources */,
+				0056F8931D9D5DEB001DE0A1 /* splitViewController.m in Sources */,
+				0063A8F91D99F1D800AF6ECF /* Controller.m in Sources */,
+				0056F84D1D9D3673001DE0A1 /* LoadViewController.m in Sources */,
+				00A21C201D99E58F00177B4B /* MasterViewController.m in Sources */,
+				0063A90C1D9A05ED00AF6ECF /* Autor.m in Sources */,
+				002614B31D9B37EA00E5EC2C /* HeaderCell.m in Sources */,
+				00A21C1A1D99E58F00177B4B /* main.m in Sources */,
+				008DA6601D9C17FB006628BB /* PullCell.m in Sources */,
+				00A21C231D99E58F00177B4B /* DetailViewController.m in Sources */,
+				002614B61D9B41A200E5EC2C /* ReposCell.m in Sources */,
+				0063A9001D9A057E00AF6ECF /* Repositorio.m in Sources */,
+				0063A9031D9A059E00AF6ECF /* PullRequest.m in Sources */,
+				008DA6661D9CC2DB006628BB /* FooterPageCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A21C2D1D99E59000177B4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0063A8FB1D99F77500AF6ECF /* GitPopJavaTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A21C381D99E59000177B4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A21C411D99E59000177B4B /* GitPopJavaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00A21C331D99E59000177B4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00A21C141D99E58F00177B4B /* GitPopJava */;
+			targetProxy = 00A21C321D99E59000177B4B /* PBXContainerItemProxy */;
+		};
+		00A21C3E1D99E59000177B4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00A21C141D99E58F00177B4B /* GitPopJava */;
+			targetProxy = 00A21C3D1D99E59000177B4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00A21C241D99E58F00177B4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00A21C251D99E58F00177B4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00A21C291D99E58F00177B4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00A21C2A1D99E58F00177B4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00A21C431D99E59000177B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00A21C441D99E59000177B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00A21C461D99E59000177B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C843E339275AB88E89A4E51 /* Pods-GitPopJava.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = GitPopJava/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pcrbrandao.GitPopJava;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00A21C471D99E59000177B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A4E77CC883660F3BDCBC314 /* Pods-GitPopJava.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = GitPopJava/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pcrbrandao.GitPopJava;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		00A21C491D99E59000177B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76EEB10AF25927DD008A310C /* Pods-GitPopJavaTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GitPopJavaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pcrbrandao.GitPopJavaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitPopJava.app/GitPopJava";
+			};
+			name = Debug;
+		};
+		00A21C4A1D99E59000177B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 110A3AD6C6B4DD42C122E976 /* Pods-GitPopJavaTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GitPopJavaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pcrbrandao.GitPopJavaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitPopJava.app/GitPopJava";
+			};
+			name = Release;
+		};
+		00A21C4C1D99E59000177B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GitPopJavaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pcrbrandao.GitPopJavaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GitPopJava;
+			};
+			name = Debug;
+		};
+		00A21C4D1D99E59000177B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GitPopJavaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pcrbrandao.GitPopJavaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GitPopJava;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00A21C101D99E58F00177B4B /* Build configuration list for PBXProject "GitPopJava" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A21C431D99E59000177B4B /* Debug */,
+				00A21C441D99E59000177B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00A21C451D99E59000177B4B /* Build configuration list for PBXNativeTarget "GitPopJava" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A21C461D99E59000177B4B /* Debug */,
+				00A21C471D99E59000177B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00A21C481D99E59000177B4B /* Build configuration list for PBXNativeTarget "GitPopJavaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A21C491D99E59000177B4B /* Debug */,
+				00A21C4A1D99E59000177B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00A21C4B1D99E59000177B4B /* Build configuration list for PBXNativeTarget "GitPopJavaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A21C4C1D99E59000177B4B /* Debug */,
+				00A21C4D1D99E59000177B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00A21C0D1D99E58F00177B4B /* Project object */;
+}

@@ -1,0 +1,16 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+target 'MostreMeuLogin' do
+
+pod 'SDWebImage'
+pod 'Mantle'
+
+   target 'MostreMeuLoginTests' do
+      inherit! :search_paths
+      
+      pod 'OCMockito'
+   end
+end
+

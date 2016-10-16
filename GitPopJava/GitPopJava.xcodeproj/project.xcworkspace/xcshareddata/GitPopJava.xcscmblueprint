@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EFD1BCC3371EBD7F48BEE4FA22A01DC67ED11B6F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EFD1BCC3371EBD7F48BEE4FA22A01DC67ED11B6F" : 0,
+    "63DAC5EC7F5283F1B41F7BCC0FDBC4F82A3AEDD6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "406E4388-4ED6-45FA-8494-6736351D491D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EFD1BCC3371EBD7F48BEE4FA22A01DC67ED11B6F" : "GitPopJava\/",
+    "63DAC5EC7F5283F1B41F7BCC0FDBC4F82A3AEDD6" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GitPopJava",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GitPopJava.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/pcrbrandao\/desafio-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "63DAC5EC7F5283F1B41F7BCC0FDBC4F82A3AEDD6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pcrbrandao\/GitPopJava.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EFD1BCC3371EBD7F48BEE4FA22A01DC67ED11B6F"
+    }
+  ]
+}

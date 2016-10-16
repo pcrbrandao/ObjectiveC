@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G1004" minimumToolsVersion="Automatic">
+    <entity name="DiaDaSemana" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="contemMateria" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MateriaNoDia" inverseName="contemDia" inverseEntity="MateriaNoDia" syncable="YES"/>
+    </entity>
+    <entity name="Materia" syncable="YES">
+        <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="estaNoDia" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MateriaNoDia" inverseName="contemMateria" inverseEntity="MateriaNoDia" syncable="YES"/>
+    </entity>
+    <entity name="MateriaNoDia" syncable="YES">
+        <relationship name="contemDia" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DiaDaSemana" inverseName="contemMateria" inverseEntity="DiaDaSemana" syncable="YES"/>
+        <relationship name="contemMateria" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Materia" inverseName="estaNoDia" inverseEntity="Materia" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Materia" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="DiaDaSemana" positionX="-54" positionY="0" width="128" height="75"/>
+        <element name="MateriaNoDia" positionX="-36" positionY="18" width="128" height="75"/>
+    </elements>
+</model>

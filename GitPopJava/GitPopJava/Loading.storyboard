@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Df-4v-MLe">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Loading-->
+        <scene sceneID="yQ0-Hx-XrK">
+            <objects>
+                <viewController title="Loading" id="9Df-4v-MLe" customClass="LoadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EJe-gZ-guj"/>
+                        <viewControllerLayoutGuide type="bottom" id="J70-Ua-5fq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GuP-Kt-EoE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="yMc-6C-PyK">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carregando..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5E-X8-9V6">
+                                <rect key="frame" x="233" y="571" width="135" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="Daf-LO-gpd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yMc-6C-PyK" firstAttribute="centerY" secondItem="GuP-Kt-EoE" secondAttribute="centerY" id="1QZ-hK-HG8"/>
+                            <constraint firstItem="yMc-6C-PyK" firstAttribute="centerX" secondItem="GuP-Kt-EoE" secondAttribute="centerX" id="DWZ-uv-mIS"/>
+                            <constraint firstItem="J70-Ua-5fq" firstAttribute="top" secondItem="g5E-X8-9V6" secondAttribute="bottom" constant="8" id="Muc-gC-atY"/>
+                            <constraint firstItem="g5E-X8-9V6" firstAttribute="centerX" secondItem="GuP-Kt-EoE" secondAttribute="centerX" id="bz6-ix-xXL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="atividade" destination="yMc-6C-PyK" id="6uO-PP-1Ob"/>
+                        <outlet property="carregandoLabel" destination="g5E-X8-9V6" id="dye-aU-xYO"/>
+                        <segue destination="4Wr-1u-d7a" kind="presentation" identifier="segueMain" id="WpC-nN-18w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6n-w3-2FI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="593" y="-9"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="MP0-Oy-PPm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="4Wr-1u-d7a" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UwK-3O-ibb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037" y="-9"/>
+        </scene>
+    </scenes>
+</document>

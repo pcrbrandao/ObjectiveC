@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BGO-da-29P">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Login" title="Login" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pui-6y-GP8">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHi-U6-fVb">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00v-bz-z0T" customClass="FBSDKLoginButton">
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EZf-dm-Q47"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bws-uj-FPO" customClass="FBSDKProfilePictureView">
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Ncn-1g-aW4">
+                                        <variation key="heightClass=compact" constant="150"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" secondItem="bws-uj-FPO" secondAttribute="height" multiplier="6:5" id="ZpM-f2-ALe"/>
+                                    <constraint firstAttribute="width" secondItem="bws-uj-FPO" secondAttribute="height" multiplier="1:1" id="oCY-hR-wMh"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oCY-hR-wMh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Ncn-1g-aW4"/>
+                                        <include reference="oCY-hR-wMh"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bws-uj-FPO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0PP-zi-Cjv"/>
+                            <constraint firstAttribute="leading" secondItem="00v-bz-z0T" secondAttribute="leading" id="8ki-8T-jlD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pui-6y-GP8" secondAttribute="trailing" id="CMT-w9-ND5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JHi-U6-fVb" secondAttribute="trailing" id="ISf-br-2kh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="JHi-U6-fVb" secondAttribute="leading" id="KuG-5V-OEh"/>
+                            <constraint firstItem="JHi-U6-fVb" firstAttribute="top" secondItem="bws-uj-FPO" secondAttribute="bottom" constant="37" id="LNN-oX-18q"/>
+                            <constraint firstAttribute="trailing" secondItem="00v-bz-z0T" secondAttribute="trailing" id="Pdu-z9-Nfo"/>
+                            <constraint firstItem="bws-uj-FPO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hJr-On-yym">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-25"/>
+                            </constraint>
+                            <constraint firstAttribute="leadingMargin" secondItem="pui-6y-GP8" secondAttribute="leading" id="i9C-ax-n04"/>
+                            <constraint firstItem="00v-bz-z0T" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="v2o-az-vYv"/>
+                            <constraint firstItem="JHi-U6-fVb" firstAttribute="top" secondItem="pui-6y-GP8" secondAttribute="bottom" constant="8" id="vGX-kg-stv"/>
+                        </constraints>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="hJr-On-yym"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Login" image="User" selectedImage="User" id="QvL-jV-1nQ"/>
+                    <connections>
+                        <outlet property="IDLabel" destination="JHi-U6-fVb" id="BmU-IA-Ccg"/>
+                        <outlet property="foto" destination="bws-uj-FPO" id="CF7-5Q-SaI"/>
+                        <outlet property="loginButton" destination="00v-bz-z0T" id="g3c-aw-vGE"/>
+                        <outlet property="nome" destination="pui-6y-GP8" id="Yam-fX-hTv"/>
+                        <outlet property="tabBarItem" destination="QvL-jV-1nQ" id="WhW-8I-vVe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130" y="344"/>
+        </scene>
+        <!--TabBar-->
+        <scene sceneID="N0c-hs-dEi">
+            <objects>
+                <tabBarController title="TabBar" automaticallyAdjustsScrollViewInsets="NO" id="BGO-da-29P" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="rCw-15-vo7">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="tabBar" destination="rCw-15-vo7" id="lAc-8J-DLl"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="WRI-Sz-ZQa"/>
+                        <segue destination="jW4-o6-kY2" kind="relationship" relationship="viewControllers" id="N6u-bf-nuK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nwz-eZ-50V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="344"/>
+        </scene>
+        <!--Amigos-->
+        <scene sceneID="n7C-Yo-gCl">
+            <objects>
+                <viewController title="Amigos" id="jW4-o6-kY2" customClass="FriendsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cco-sz-uXx"/>
+                        <viewControllerLayoutGuide type="bottom" id="KGS-Yi-eI6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VGk-v8-SZW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amigos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wib-mb-vLg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="sWK-r9-3TX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wib-mb-vLg" firstAttribute="centerY" secondItem="VGk-v8-SZW" secondAttribute="centerY" id="T5d-3s-F2i"/>
+                            <constraint firstItem="Wib-mb-vLg" firstAttribute="centerX" secondItem="VGk-v8-SZW" secondAttribute="centerX" id="z3o-rT-TcC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Amigos" image="User Group Man Man" selectedImage="User Group Man Man" id="3QW-kd-jJu"/>
+                    <connections>
+                        <outlet property="tabBarItem" destination="3QW-kd-jJu" id="QvT-lb-0XW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xv-8G-e8g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130" y="1130"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="User" width="16" height="16"/>
+        <image name="User Group Man Man" width="16" height="16"/>
+    </resources>
+</document>

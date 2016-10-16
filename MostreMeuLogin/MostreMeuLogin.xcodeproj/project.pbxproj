@@ -1,0 +1,865 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0014D1541DA6BB62006F3BEA /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0014D1531DA6BB62006F3BEA /* Profile.m */; };
+		001BE7001DA13F4000995588 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 001BE6FF1DA13F4000995588 /* main.m */; };
+		001BE7031DA13F4000995588 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 001BE7021DA13F4000995588 /* AppDelegate.m */; };
+		001BE7061DA13F4000995588 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001BE7051DA13F4000995588 /* ViewController.m */; };
+		001BE7091DA13F4000995588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001BE7071DA13F4000995588 /* Main.storyboard */; };
+		001BE70B1DA13F4000995588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001BE70A1DA13F4000995588 /* Assets.xcassets */; };
+		001BE70E1DA13F4000995588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001BE70C1DA13F4000995588 /* LaunchScreen.storyboard */; };
+		00369AD21DA41D8100DD99FD /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00369ACA1DA41D8100DD99FD /* AccountKit.framework */; };
+		00369AD31DA41D8100DD99FD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00369ACB1DA41D8100DD99FD /* Bolts.framework */; };
+		00369AD41DA41D8100DD99FD /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00369ACC1DA41D8100DD99FD /* FBAudienceNetwork.framework */; };
+		00369AD51DA41D8100DD99FD /* FBNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00369ACD1DA41D8100DD99FD /* FBNotifications.framework */; };
+		00369AD61DA41D8100DD99FD /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00369ACE1DA41D8100DD99FD /* FBSDKCoreKit.framework */; };
+		00369AD71DA41D8100DD99FD /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00369ACF1DA41D8100DD99FD /* FBSDKLoginKit.framework */; };
+		00369AD81DA41D8100DD99FD /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00369AD01DA41D8100DD99FD /* FBSDKMessengerShareKit.framework */; };
+		00369AD91DA41D8100DD99FD /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00369AD11DA41D8100DD99FD /* FBSDKShareKit.framework */; };
+		004615D01DA93AB100BD6A9E /* ViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 004615CF1DA93AB100BD6A9E /* ViewControllerTest.m */; };
+		004615DA1DA9443B00BD6A9E /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1BA1DA4620F00C67D0A /* AccountKit.framework */; };
+		004615DB1DA9443B00BD6A9E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1BB1DA4620F00C67D0A /* Bolts.framework */; };
+		004615DC1DA9443B00BD6A9E /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1BC1DA4620F00C67D0A /* FBAudienceNetwork.framework */; };
+		004615DD1DA9443B00BD6A9E /* FBNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1BD1DA4620F00C67D0A /* FBNotifications.framework */; };
+		004615DE1DA9443B00BD6A9E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1BE1DA4620F00C67D0A /* FBSDKCoreKit.framework */; };
+		004615DF1DA9443B00BD6A9E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1BF1DA4620F00C67D0A /* FBSDKLoginKit.framework */; };
+		004615E01DA9443B00BD6A9E /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1C01DA4620F00C67D0A /* FBSDKMessengerShareKit.framework */; };
+		004615E11DA9443B00BD6A9E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1C11DA4620F00C67D0A /* FBSDKShareKit.framework */; };
+		005FE1E41DA8007700A6D834 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005FE1E31DA8007700A6D834 /* FriendsViewController.m */; };
+		009DF1C21DA4620F00C67D0A /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1BA1DA4620F00C67D0A /* AccountKit.framework */; };
+		009DF1C31DA4620F00C67D0A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1BB1DA4620F00C67D0A /* Bolts.framework */; };
+		009DF1C41DA4620F00C67D0A /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1BC1DA4620F00C67D0A /* FBAudienceNetwork.framework */; };
+		009DF1C51DA4620F00C67D0A /* FBNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1BD1DA4620F00C67D0A /* FBNotifications.framework */; };
+		009DF1C61DA4620F00C67D0A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1BE1DA4620F00C67D0A /* FBSDKCoreKit.framework */; };
+		009DF1C71DA4620F00C67D0A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1BF1DA4620F00C67D0A /* FBSDKLoginKit.framework */; };
+		009DF1C81DA4620F00C67D0A /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1C01DA4620F00C67D0A /* FBSDKMessengerShareKit.framework */; };
+		009DF1C91DA4620F00C67D0A /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1C11DA4620F00C67D0A /* FBSDKShareKit.framework */; };
+		00CDB2261DA2B8D000F1E08F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 00CDB2251DA2B8D000F1E08F /* .gitignore */; };
+		00E463FC1DA1693400A8E695 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 00E463FB1DA1693400A8E695 /* Podfile */; };
+		60C8AFA15D174DBD63F81593 /* Pods_MostreMeuLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11C7C16F370E09AF87482CD /* Pods_MostreMeuLoginTests.framework */; };
+		757E904998C2D07A28F2180D /* Pods_MostreMeuLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53F270AB3A9E9656CF24BAC /* Pods_MostreMeuLogin.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		001BE7151DA13F4000995588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 001BE6F31DA13F3F00995588 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 001BE6FA1DA13F4000995588;
+			remoteInfo = MostreMeuLogin;
+		};
+		001BE7201DA13F4000995588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 001BE6F31DA13F3F00995588 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 001BE6FA1DA13F4000995588;
+			remoteInfo = MostreMeuLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000E51B51DAE5E7B0012B09E /* MostreMeuLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MostreMeuLogin.entitlements; path = MostreMeuLogin/MostreMeuLogin.entitlements; sourceTree = "<group>"; };
+		0014D1521DA6BB62006F3BEA /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		0014D1531DA6BB62006F3BEA /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		001BE6FB1DA13F4000995588 /* MostreMeuLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MostreMeuLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		001BE6FF1DA13F4000995588 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		001BE7011DA13F4000995588 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MostreMeuLogin/AppDelegate.h; sourceTree = "<group>"; };
+		001BE7021DA13F4000995588 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MostreMeuLogin/AppDelegate.m; sourceTree = "<group>"; };
+		001BE7041DA13F4000995588 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		001BE7051DA13F4000995588 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		001BE7081DA13F4000995588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		001BE70A1DA13F4000995588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		001BE70D1DA13F4000995588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		001BE70F1DA13F4000995588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = MostreMeuLogin/Info.plist; sourceTree = "<group>"; };
+		001BE7141DA13F4000995588 /* MostreMeuLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MostreMeuLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		001BE71A1DA13F4000995588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001BE71F1DA13F4000995588 /* MostreMeuLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MostreMeuLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		001BE7251DA13F4000995588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00369ACA1DA41D8100DD99FD /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountKit.framework; sourceTree = "<group>"; };
+		00369ACB1DA41D8100DD99FD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		00369ACC1DA41D8100DD99FD /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		00369ACD1DA41D8100DD99FD /* FBNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBNotifications.framework; sourceTree = "<group>"; };
+		00369ACE1DA41D8100DD99FD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		00369ACF1DA41D8100DD99FD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		00369AD01DA41D8100DD99FD /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		00369AD11DA41D8100DD99FD /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		004615CF1DA93AB100BD6A9E /* ViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTest.m; sourceTree = "<group>"; };
+		004615D21DA9442500BD6A9E /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountKit.framework; sourceTree = "<group>"; };
+		004615D31DA9442500BD6A9E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		004615D41DA9442500BD6A9E /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		004615D51DA9442500BD6A9E /* FBNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBNotifications.framework; sourceTree = "<group>"; };
+		004615D61DA9442500BD6A9E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		004615D71DA9442500BD6A9E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		004615D81DA9442500BD6A9E /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		004615D91DA9442500BD6A9E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		005FE1E21DA8007700A6D834 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		005FE1E31DA8007700A6D834 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		009DF1BA1DA4620F00C67D0A /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountKit.framework; sourceTree = "<group>"; };
+		009DF1BB1DA4620F00C67D0A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		009DF1BC1DA4620F00C67D0A /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		009DF1BD1DA4620F00C67D0A /* FBNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBNotifications.framework; sourceTree = "<group>"; };
+		009DF1BE1DA4620F00C67D0A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		009DF1BF1DA4620F00C67D0A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		009DF1C01DA4620F00C67D0A /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		009DF1C11DA4620F00C67D0A /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		00CDB2251DA2B8D000F1E08F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		00E463FB1DA1693400A8E695 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		058FA63FC1353A5EFD5CEE72 /* Pods-MostreMeuLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MostreMeuLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MostreMeuLogin/Pods-MostreMeuLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		36C6815ABFC09CC98BBFE2E3 /* Pods-MostreMeuLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MostreMeuLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-MostreMeuLogin/Pods-MostreMeuLogin.release.xcconfig"; sourceTree = "<group>"; };
+		97CF4C7118F092796015817C /* Pods-MostreMeuLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MostreMeuLoginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MostreMeuLoginTests/Pods-MostreMeuLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A53F270AB3A9E9656CF24BAC /* Pods_MostreMeuLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MostreMeuLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B329F091B51538331B204F90 /* Pods-MostreMeuLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MostreMeuLoginTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MostreMeuLoginTests/Pods-MostreMeuLoginTests.release.xcconfig"; sourceTree = "<group>"; };
+		E11C7C16F370E09AF87482CD /* Pods_MostreMeuLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MostreMeuLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		001BE6F81DA13F4000995588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00369AD31DA41D8100DD99FD /* Bolts.framework in Frameworks */,
+				00369AD61DA41D8100DD99FD /* FBSDKCoreKit.framework in Frameworks */,
+				009DF1C91DA4620F00C67D0A /* FBSDKShareKit.framework in Frameworks */,
+				009DF1C71DA4620F00C67D0A /* FBSDKLoginKit.framework in Frameworks */,
+				757E904998C2D07A28F2180D /* Pods_MostreMeuLogin.framework in Frameworks */,
+				009DF1C81DA4620F00C67D0A /* FBSDKMessengerShareKit.framework in Frameworks */,
+				009DF1C41DA4620F00C67D0A /* FBAudienceNetwork.framework in Frameworks */,
+				00369AD21DA41D8100DD99FD /* AccountKit.framework in Frameworks */,
+				00369AD81DA41D8100DD99FD /* FBSDKMessengerShareKit.framework in Frameworks */,
+				00369AD91DA41D8100DD99FD /* FBSDKShareKit.framework in Frameworks */,
+				00369AD71DA41D8100DD99FD /* FBSDKLoginKit.framework in Frameworks */,
+				009DF1C21DA4620F00C67D0A /* AccountKit.framework in Frameworks */,
+				009DF1C31DA4620F00C67D0A /* Bolts.framework in Frameworks */,
+				009DF1C51DA4620F00C67D0A /* FBNotifications.framework in Frameworks */,
+				009DF1C61DA4620F00C67D0A /* FBSDKCoreKit.framework in Frameworks */,
+				00369AD41DA41D8100DD99FD /* FBAudienceNetwork.framework in Frameworks */,
+				00369AD51DA41D8100DD99FD /* FBNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001BE7111DA13F4000995588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C8AFA15D174DBD63F81593 /* Pods_MostreMeuLoginTests.framework in Frameworks */,
+				004615DA1DA9443B00BD6A9E /* AccountKit.framework in Frameworks */,
+				004615DB1DA9443B00BD6A9E /* Bolts.framework in Frameworks */,
+				004615DC1DA9443B00BD6A9E /* FBAudienceNetwork.framework in Frameworks */,
+				004615DD1DA9443B00BD6A9E /* FBNotifications.framework in Frameworks */,
+				004615DE1DA9443B00BD6A9E /* FBSDKCoreKit.framework in Frameworks */,
+				004615DF1DA9443B00BD6A9E /* FBSDKLoginKit.framework in Frameworks */,
+				004615E01DA9443B00BD6A9E /* FBSDKMessengerShareKit.framework in Frameworks */,
+				004615E11DA9443B00BD6A9E /* FBSDKShareKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001BE71C1DA13F4000995588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0014D14E1DA6BA9B006F3BEA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0014D1521DA6BB62006F3BEA /* Profile.h */,
+				0014D1531DA6BB62006F3BEA /* Profile.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		001BE6F21DA13F3F00995588 = {
+			isa = PBXGroup;
+			children = (
+				009DF1B91DA4620F00C67D0A /* FBSDK */,
+				0014D14E1DA6BA9B006F3BEA /* Models */,
+				0061860A1DA1B2E40024A866 /* Config */,
+				001BE6FD1DA13F4000995588 /* MostreMeuLogin */,
+				001BE7171DA13F4000995588 /* MostreMeuLoginTests */,
+				001BE7221DA13F4000995588 /* MostreMeuLoginUITests */,
+				001BE6FC1DA13F4000995588 /* Products */,
+				1195D1624FAEE441297B4B6B /* Pods */,
+				2FEB61933F36C07150AD7705 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		001BE6FC1DA13F4000995588 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				001BE6FB1DA13F4000995588 /* MostreMeuLogin.app */,
+				001BE7141DA13F4000995588 /* MostreMeuLoginTests.xctest */,
+				001BE71F1DA13F4000995588 /* MostreMeuLoginUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		001BE6FD1DA13F4000995588 /* MostreMeuLogin */ = {
+			isa = PBXGroup;
+			children = (
+				0061860D1DA1B3260024A866 /* Views */,
+				0061860B1DA1B3030024A866 /* Storyboards */,
+				0061860C1DA1B31A0024A866 /* Resources */,
+				001BE6FE1DA13F4000995588 /* Supporting Files */,
+			);
+			path = MostreMeuLogin;
+			sourceTree = "<group>";
+		};
+		001BE6FE1DA13F4000995588 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				001BE6FF1DA13F4000995588 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		001BE7171DA13F4000995588 /* MostreMeuLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				001BE71A1DA13F4000995588 /* Info.plist */,
+				004615CF1DA93AB100BD6A9E /* ViewControllerTest.m */,
+			);
+			path = MostreMeuLoginTests;
+			sourceTree = "<group>";
+		};
+		001BE7221DA13F4000995588 /* MostreMeuLoginUITests */ = {
+			isa = PBXGroup;
+			children = (
+				001BE7251DA13F4000995588 /* Info.plist */,
+			);
+			path = MostreMeuLoginUITests;
+			sourceTree = "<group>";
+		};
+		004615D11DA9442500BD6A9E /* FBSDK */ = {
+			isa = PBXGroup;
+			children = (
+				004615D21DA9442500BD6A9E /* AccountKit.framework */,
+				004615D31DA9442500BD6A9E /* Bolts.framework */,
+				004615D41DA9442500BD6A9E /* FBAudienceNetwork.framework */,
+				004615D51DA9442500BD6A9E /* FBNotifications.framework */,
+				004615D61DA9442500BD6A9E /* FBSDKCoreKit.framework */,
+				004615D71DA9442500BD6A9E /* FBSDKLoginKit.framework */,
+				004615D81DA9442500BD6A9E /* FBSDKMessengerShareKit.framework */,
+				004615D91DA9442500BD6A9E /* FBSDKShareKit.framework */,
+			);
+			path = FBSDK;
+			sourceTree = "<group>";
+		};
+		0061860A1DA1B2E40024A866 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				000E51B51DAE5E7B0012B09E /* MostreMeuLogin.entitlements */,
+				00CDB2251DA2B8D000F1E08F /* .gitignore */,
+				001BE7011DA13F4000995588 /* AppDelegate.h */,
+				001BE7021DA13F4000995588 /* AppDelegate.m */,
+				001BE70F1DA13F4000995588 /* Info.plist */,
+				00E463FB1DA1693400A8E695 /* Podfile */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		0061860B1DA1B3030024A866 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				001BE7071DA13F4000995588 /* Main.storyboard */,
+				001BE70C1DA13F4000995588 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		0061860C1DA1B31A0024A866 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				001BE70A1DA13F4000995588 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0061860D1DA1B3260024A866 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				001BE7041DA13F4000995588 /* ViewController.h */,
+				001BE7051DA13F4000995588 /* ViewController.m */,
+				005FE1E21DA8007700A6D834 /* FriendsViewController.h */,
+				005FE1E31DA8007700A6D834 /* FriendsViewController.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		009DF1B91DA4620F00C67D0A /* FBSDK */ = {
+			isa = PBXGroup;
+			children = (
+				009DF1BA1DA4620F00C67D0A /* AccountKit.framework */,
+				009DF1BB1DA4620F00C67D0A /* Bolts.framework */,
+				009DF1BC1DA4620F00C67D0A /* FBAudienceNetwork.framework */,
+				009DF1BD1DA4620F00C67D0A /* FBNotifications.framework */,
+				009DF1BE1DA4620F00C67D0A /* FBSDKCoreKit.framework */,
+				009DF1BF1DA4620F00C67D0A /* FBSDKLoginKit.framework */,
+				009DF1C01DA4620F00C67D0A /* FBSDKMessengerShareKit.framework */,
+				009DF1C11DA4620F00C67D0A /* FBSDKShareKit.framework */,
+			);
+			path = FBSDK;
+			sourceTree = "<group>";
+		};
+		1195D1624FAEE441297B4B6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				058FA63FC1353A5EFD5CEE72 /* Pods-MostreMeuLogin.debug.xcconfig */,
+				36C6815ABFC09CC98BBFE2E3 /* Pods-MostreMeuLogin.release.xcconfig */,
+				97CF4C7118F092796015817C /* Pods-MostreMeuLoginTests.debug.xcconfig */,
+				B329F091B51538331B204F90 /* Pods-MostreMeuLoginTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2FEB61933F36C07150AD7705 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				004615D11DA9442500BD6A9E /* FBSDK */,
+				00369ACA1DA41D8100DD99FD /* AccountKit.framework */,
+				00369ACB1DA41D8100DD99FD /* Bolts.framework */,
+				00369ACC1DA41D8100DD99FD /* FBAudienceNetwork.framework */,
+				00369ACD1DA41D8100DD99FD /* FBNotifications.framework */,
+				00369ACE1DA41D8100DD99FD /* FBSDKCoreKit.framework */,
+				00369ACF1DA41D8100DD99FD /* FBSDKLoginKit.framework */,
+				00369AD01DA41D8100DD99FD /* FBSDKMessengerShareKit.framework */,
+				00369AD11DA41D8100DD99FD /* FBSDKShareKit.framework */,
+				A53F270AB3A9E9656CF24BAC /* Pods_MostreMeuLogin.framework */,
+				E11C7C16F370E09AF87482CD /* Pods_MostreMeuLoginTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		001BE6FA1DA13F4000995588 /* MostreMeuLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001BE7281DA13F4000995588 /* Build configuration list for PBXNativeTarget "MostreMeuLogin" */;
+			buildPhases = (
+				93D19BC5F0EF94CF7C14D422 /* [CP] Check Pods Manifest.lock */,
+				001BE6F71DA13F4000995588 /* Sources */,
+				001BE6F81DA13F4000995588 /* Frameworks */,
+				001BE6F91DA13F4000995588 /* Resources */,
+				A5EBDE179A00E078DC899E22 /* [CP] Embed Pods Frameworks */,
+				C62A4417A03FF46F28935D01 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MostreMeuLogin;
+			productName = MostreMeuLogin;
+			productReference = 001BE6FB1DA13F4000995588 /* MostreMeuLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		001BE7131DA13F4000995588 /* MostreMeuLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001BE72B1DA13F4000995588 /* Build configuration list for PBXNativeTarget "MostreMeuLoginTests" */;
+			buildPhases = (
+				86D3A0681C4B95721A29707C /* [CP] Check Pods Manifest.lock */,
+				001BE7101DA13F4000995588 /* Sources */,
+				001BE7111DA13F4000995588 /* Frameworks */,
+				001BE7121DA13F4000995588 /* Resources */,
+				7134E53A6DE24E5E35A10263 /* [CP] Embed Pods Frameworks */,
+				2603CE379BD7F4C21515A075 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				001BE7161DA13F4000995588 /* PBXTargetDependency */,
+			);
+			name = MostreMeuLoginTests;
+			productName = MostreMeuLoginTests;
+			productReference = 001BE7141DA13F4000995588 /* MostreMeuLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		001BE71E1DA13F4000995588 /* MostreMeuLoginUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001BE72E1DA13F4000995588 /* Build configuration list for PBXNativeTarget "MostreMeuLoginUITests" */;
+			buildPhases = (
+				001BE71B1DA13F4000995588 /* Sources */,
+				001BE71C1DA13F4000995588 /* Frameworks */,
+				001BE71D1DA13F4000995588 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				001BE7211DA13F4000995588 /* PBXTargetDependency */,
+			);
+			name = MostreMeuLoginUITests;
+			productName = MostreMeuLoginUITests;
+			productReference = 001BE71F1DA13F4000995588 /* MostreMeuLoginUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		001BE6F31DA13F3F00995588 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Pedro Brandão";
+				TargetAttributes = {
+					001BE6FA1DA13F4000995588 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = U3A2WCJ8XS;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					001BE7131DA13F4000995588 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = U3A2WCJ8XS;
+						TestTargetID = 001BE6FA1DA13F4000995588;
+					};
+					001BE71E1DA13F4000995588 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = U3A2WCJ8XS;
+						TestTargetID = 001BE6FA1DA13F4000995588;
+					};
+				};
+			};
+			buildConfigurationList = 001BE6F61DA13F3F00995588 /* Build configuration list for PBXProject "MostreMeuLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 001BE6F21DA13F3F00995588;
+			productRefGroup = 001BE6FC1DA13F4000995588 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				001BE6FA1DA13F4000995588 /* MostreMeuLogin */,
+				001BE7131DA13F4000995588 /* MostreMeuLoginTests */,
+				001BE71E1DA13F4000995588 /* MostreMeuLoginUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		001BE6F91DA13F4000995588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CDB2261DA2B8D000F1E08F /* .gitignore in Resources */,
+				001BE70E1DA13F4000995588 /* LaunchScreen.storyboard in Resources */,
+				001BE70B1DA13F4000995588 /* Assets.xcassets in Resources */,
+				00E463FC1DA1693400A8E695 /* Podfile in Resources */,
+				001BE7091DA13F4000995588 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001BE7121DA13F4000995588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001BE71D1DA13F4000995588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2603CE379BD7F4C21515A075 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MostreMeuLoginTests/Pods-MostreMeuLoginTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7134E53A6DE24E5E35A10263 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MostreMeuLoginTests/Pods-MostreMeuLoginTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86D3A0681C4B95721A29707C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93D19BC5F0EF94CF7C14D422 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5EBDE179A00E078DC899E22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MostreMeuLogin/Pods-MostreMeuLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C62A4417A03FF46F28935D01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MostreMeuLogin/Pods-MostreMeuLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		001BE6F71DA13F4000995588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005FE1E41DA8007700A6D834 /* FriendsViewController.m in Sources */,
+				001BE7061DA13F4000995588 /* ViewController.m in Sources */,
+				0014D1541DA6BB62006F3BEA /* Profile.m in Sources */,
+				001BE7031DA13F4000995588 /* AppDelegate.m in Sources */,
+				001BE7001DA13F4000995588 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001BE7101DA13F4000995588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004615D01DA93AB100BD6A9E /* ViewControllerTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001BE71B1DA13F4000995588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		001BE7161DA13F4000995588 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 001BE6FA1DA13F4000995588 /* MostreMeuLogin */;
+			targetProxy = 001BE7151DA13F4000995588 /* PBXContainerItemProxy */;
+		};
+		001BE7211DA13F4000995588 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 001BE6FA1DA13F4000995588 /* MostreMeuLogin */;
+			targetProxy = 001BE7201DA13F4000995588 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		001BE7071DA13F4000995588 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				001BE7081DA13F4000995588 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		001BE70C1DA13F4000995588 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				001BE70D1DA13F4000995588 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		001BE7261DA13F4000995588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		001BE7271DA13F4000995588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		001BE7291DA13F4000995588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 058FA63FC1353A5EFD5CEE72 /* Pods-MostreMeuLogin.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MostreMeuLogin/MostreMeuLogin.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					"$(PROJECT_DIR)/FBSDK",
+				);
+				INFOPLIST_FILE = MostreMeuLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pcrbrandao.MostreMeuLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		001BE72A1DA13F4000995588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36C6815ABFC09CC98BBFE2E3 /* Pods-MostreMeuLogin.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MostreMeuLogin/MostreMeuLogin.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					"$(PROJECT_DIR)/FBSDK",
+				);
+				INFOPLIST_FILE = MostreMeuLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pcrbrandao.MostreMeuLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		001BE72C1DA13F4000995588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97CF4C7118F092796015817C /* Pods-MostreMeuLoginTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FBSDK",
+				);
+				INFOPLIST_FILE = MostreMeuLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pcrbrandao.MostreMeuLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MostreMeuLogin.app/MostreMeuLogin";
+			};
+			name = Debug;
+		};
+		001BE72D1DA13F4000995588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B329F091B51538331B204F90 /* Pods-MostreMeuLoginTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FBSDK",
+				);
+				INFOPLIST_FILE = MostreMeuLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pcrbrandao.MostreMeuLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MostreMeuLogin.app/MostreMeuLogin";
+			};
+			name = Release;
+		};
+		001BE72F1DA13F4000995588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MostreMeuLoginUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pcrbrandao.MostreMeuLoginUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MostreMeuLogin;
+			};
+			name = Debug;
+		};
+		001BE7301DA13F4000995588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MostreMeuLoginUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pcrbrandao.MostreMeuLoginUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MostreMeuLogin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		001BE6F61DA13F3F00995588 /* Build configuration list for PBXProject "MostreMeuLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001BE7261DA13F4000995588 /* Debug */,
+				001BE7271DA13F4000995588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		001BE7281DA13F4000995588 /* Build configuration list for PBXNativeTarget "MostreMeuLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001BE7291DA13F4000995588 /* Debug */,
+				001BE72A1DA13F4000995588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		001BE72B1DA13F4000995588 /* Build configuration list for PBXNativeTarget "MostreMeuLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001BE72C1DA13F4000995588 /* Debug */,
+				001BE72D1DA13F4000995588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		001BE72E1DA13F4000995588 /* Build configuration list for PBXNativeTarget "MostreMeuLoginUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001BE72F1DA13F4000995588 /* Debug */,
+				001BE7301DA13F4000995588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 001BE6F31DA13F3F00995588 /* Project object */;
+}
