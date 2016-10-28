@@ -7,10 +7,13 @@
 //
 
 #import <GameplayKit/GameplayKit.h>
+#import <SceneKit/SceneKit.h>
 #import <UIKit/UIKit.h>
 
-@interface MoveComponent : GKAgent2D<GKAgentDelegate>
+@interface MoveComponent : GKComponent
 
--(instancetype)initWithMaxSpeed:(CGFloat)maxSpeed MaxAcceleration:(CGFloat)maxAccell andRadius:(CGFloat)radius;
+-(instancetype)initWithNode: (SCNNode *)node;
+
+-(void)moveWithTap:(UITapGestureRecognizer *)tap inView:(SCNView *)view;
 
 @end

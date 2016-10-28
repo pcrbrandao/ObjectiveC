@@ -13,6 +13,6 @@
 
 @property (nonatomic,retain)SCNNode *node;
 
--(instancetype)initWithName:(NSString *)name InScene:(SCNScene *)scene;
+-(instancetype)initWithNode:(SCNNode *)node;
 
 @end

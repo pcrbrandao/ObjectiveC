@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <SceneKit/SceneKit.h>
 #import "MainScene.h"
+#import "PlayerEntity.h"
 
-@interface GameController : NSObject
+@interface GameController : NSObject<SCNSceneRendererDelegate>
 
 @property (nonatomic,retain)MainScene *scene;
+@property (nonatomic,retain)PlayerEntity *player;
 
--(void)handlePanGesture:(UIPanGestureRecognizer *)pan;
+-(void)handleTapGesture:(UITapGestureRecognizer *)tap inView:(SCNView *)view;
 
 +(GameController *)sharedController;
 

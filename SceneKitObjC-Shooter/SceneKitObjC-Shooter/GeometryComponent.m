@@ -10,13 +10,10 @@
 
 @implementation GeometryComponent
 
--(instancetype)initWithName:(NSString *)name InScene:(SCNScene *)scene {
+-(instancetype)initWithNode:(SCNNode *)node {
     self = [super init];
     if (self) {
-        _node = [scene.rootNode childNodeWithName:name recursively:false];
-        if (!_node) {
-            NSLog(@"Esse nome, %@, não está na scene: %@", name, scene);
-        }
+        _node = node;
     }
     
     return self;
