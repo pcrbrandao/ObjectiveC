@@ -11,15 +11,26 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "Profile.h"
 
+/**
+ * @discussion Representa a vista principal, com o butão de login, nome, email
+ */
 @interface ViewController : UIViewController
 
+// O FBSDKLoginButton faz o login automático, verifica se há um usuário logado e se
+// configura conforme o estado. Porém não atualiza o FBSDKProfile.currentProfile
+// automaticamente.
 @property (strong, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
-@property (weak, nonatomic) IBOutlet UILabel *nome;
-@property (strong, nonatomic) IBOutlet FBSDKProfilePictureView *foto;
-@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
-@property (weak, nonatomic) IBOutlet UITabBarItem *tabBarItem;
 
-@property (nonatomic,retain)NSDictionary *profileParam;
+// A FBSDKProfilePictureView atualiza-se automáticamente com o ID do
+// FBProfile.currentProfile que é atribuído pelo FBSDKLoginButton
+@property (strong, nonatomic) IBOutlet FBSDKProfilePictureView *foto;
+
+@property (weak, nonatomic) IBOutlet UILabel *nome;
+@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
+
+// Contém os dados do profile
+// O método loadCurrentProfileWithCompletion do FBSDKProfile deve ser executado
+// para atualizar os dados
 @property (nonatomic,retain)Profile *profile;
 
 @end

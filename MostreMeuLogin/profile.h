@@ -9,8 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
-@interface Profile : FBSDKProfile
+/**
+ * @discussion É um SBSDKProfile com email que deve ser configurado com o FBSDKGraphRequest
+ */
+@interface Profile : NSObject
 
+@property (nonatomic,retain)FBSDKProfile *profile;
 @property (nonatomic,retain)NSString *email;
+
+-(instancetype)initWithProfile:(FBSDKProfile *)profile;
 
 @end
