@@ -34,6 +34,7 @@
     
     // O FBSDKProfile.currentProfile deve ser carregado antes de utilizado.
     [FBSDKProfile loadCurrentProfileWithCompletion:^(FBSDKProfile *profile, NSError *error) {
+        self.controller = [Controller sharedControllerWithProfile:profile];
         [self _updateUIWithProfile:profile];
     }];
 }
@@ -58,7 +59,7 @@
     
     if (profile) {
         
-        self.profile = [[Profile alloc] initWithProfile:profile];
+        self.controller.userProfile = [[Profile alloc] initWithProfile:profile];
         self.nome.text = profile.name;
         
         NSDictionary *profileParam = @{@"fields": @"id,name,email"};
@@ -68,11 +69,11 @@
              startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
                  if (!error) {
                      NSLog(@"fetched user:%@", result);
-                     self.profile.email = [(NSDictionary *)result valueForKey:@"email"];
+                     self.controller.userProfile.email = [(NSDictionary *)result valueForKey:@"email"];
                  } else {
-                     self.profile.email = @"email vazio";
+                     self.controller.userProfile.email = @"email vazio";
                  }
-                 self.emailLabel.text = [self.profile email];
+                 self.emailLabel.text = [self.controller.userProfile email];
              }];
         } else {
             self.emailLabel.text = @"email vazio";

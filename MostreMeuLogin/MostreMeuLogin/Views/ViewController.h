@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import "Profile.h"
+#import "Controller.h"
 
 /**
  * @discussion Representa a vista principal, com o butão de login, nome, email
@@ -31,7 +31,7 @@
 // Contém os dados do profile
 // O método loadCurrentProfileWithCompletion do FBSDKProfile deve ser executado
 // para atualizar os dados
-@property (nonatomic,retain)Profile *profile;
+@property (nonatomic,retain)Controller *controller;
 
 @end
 
