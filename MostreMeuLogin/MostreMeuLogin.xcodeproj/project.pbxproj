@@ -102,6 +102,7 @@
 		005FE1E31DA8007700A6D834 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
 		0088B2BE1DCD1A29001DB067 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		0088B2BF1DCD1A29001DB067 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		0088B2C11DCD307E001DB067 /* UIUpdateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUpdateProtocol.h; sourceTree = "<group>"; };
 		009DF1BA1DA4620F00C67D0A /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountKit.framework; sourceTree = "<group>"; };
 		009DF1BB1DA4620F00C67D0A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		009DF1BC1DA4620F00C67D0A /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
@@ -292,6 +293,7 @@
 				001BE7051DA13F4000995588 /* ViewController.m */,
 				005FE1E21DA8007700A6D834 /* FriendsViewController.h */,
 				005FE1E31DA8007700A6D834 /* FriendsViewController.m */,
+				0088B2C11DCD307E001DB067 /* UIUpdateProtocol.h */,
 			);
 			path = Views;
 			sourceTree = "<group>";

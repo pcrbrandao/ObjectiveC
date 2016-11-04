@@ -10,11 +10,12 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "Controller.h"
+#import "UIUpdateProtocol.h"
 
 /**
  * @discussion Representa a vista principal, com o butão de login, nome, email
  */
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIUpdateProtocol>
 
 // O FBSDKLoginButton faz o login automático, verifica se há um usuário logado e se
 // configura conforme o estado. Porém não atualiza o FBSDKProfile.currentProfile
@@ -32,6 +33,12 @@
 // O método loadCurrentProfileWithCompletion do FBSDKProfile deve ser executado
 // para atualizar os dados
 @property (nonatomic,retain)Controller *controller;
+
+/**
+ * @brief Atualiza os objetos da view com um profile
+ * @param profile É o objeto que contém os dados
+ */
+-(void)updateUI;
 
 @end
 

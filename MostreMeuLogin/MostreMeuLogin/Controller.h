@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "Profile.h"
+#import "UIUpdateProtocol.h"
 
 /// @discussion Contém propriedades e métodos que obtém e fornecem informações para as view
 @interface Controller : NSObject
@@ -19,11 +20,13 @@
 /// @brief Contém os amigos cadastrados no FBSDK
 @property (nonatomic,retain)NSMutableArray *amigos;
 
+@property (nonatomic,retain)UIViewController<UIUpdateProtocol> *currentViewController;
+
 /**
  * @brief Cria uma instância única do controller
  * @param profile Obtido via FBSDKProfile
  * @return sharedController: A instância do controller
  */
-+(Controller *)sharedControllerWithProfile:(FBSDKProfile *)profile;
++(Controller *)sharedControllerWithProfile:(FBSDKProfile *)profile andViewController:(UIViewController<UIUpdateProtocol> *)viewController;
 
 @end
