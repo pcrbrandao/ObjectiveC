@@ -10,9 +10,6 @@
 
 @interface ViewController ()
 
-@property (nonatomic,retain)NSDictionary *profileParam;
-@property (nonatomic,retain)FBSDKProfile *profile;
-
 @end
 
 @implementation ViewController
@@ -22,7 +19,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     [FBSDKProfile enableUpdatesOnAccessTokenChange:YES];
-    self.profileParam = @{@"fields": @"id,name,picture"};
+    self.profileParam = @{@"fields": @"id,name,email"};
     
     // Facebook button
     self.loginButton = [[FBSDKLoginButton alloc] init];
@@ -34,7 +31,7 @@
                                                object:nil];
     
     [FBSDKProfile loadCurrentProfileWithCompletion:^(FBSDKProfile *profile, NSError *error) {
-        [self _updateProfile:profile];
+        [self _updateProfile:(Profile *)profile];
     }];
 }
 
@@ -42,18 +39,18 @@
     NSLog(@"O notification center disparou a notificação.......: %@", notification);
     
     [FBSDKProfile loadCurrentProfileWithCompletion:^(FBSDKProfile *profile, NSError *error) {
-        [self _updateProfile:profile];
+        [self _updateProfile:(Profile *)profile];
     }];
 }
 
-- (void)_updateProfile: (FBSDKProfile *)profile {
+- (void)_updateProfile: (Profile *)profile {
     
     if (profile) {
         self.nome.text = profile.name;
-        self.IDLabel.text = profile.userID;
+        self.emailLabel.text = profile.email;
     } else {
         self.nome.text = @"No active user!";
-        self.IDLabel.text = @"No ID";
+        self.emailLabel.text = @"No email";
     }
 }
 

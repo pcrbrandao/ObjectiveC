@@ -11,4 +11,6 @@
 
 @interface Profile : FBSDKProfile
 
+@property (nonatomic,retain)NSString *email;
+
 @end

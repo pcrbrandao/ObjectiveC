@@ -16,8 +16,11 @@
 @property (strong, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
 @property (weak, nonatomic) IBOutlet UILabel *nome;
 @property (strong, nonatomic) IBOutlet FBSDKProfilePictureView *foto;
-@property (weak, nonatomic) IBOutlet UILabel *IDLabel;
+@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
 @property (weak, nonatomic) IBOutlet UITabBarItem *tabBarItem;
+
+@property (nonatomic,retain)NSDictionary *profileParam;
+@property (nonatomic,retain)Profile *profile;
 
 @end
 
