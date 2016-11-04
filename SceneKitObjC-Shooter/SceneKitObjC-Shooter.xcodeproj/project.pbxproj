@@ -21,6 +21,8 @@
 		007F3D2B1D7EED2E003F7E12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007F3D291D7EED2E003F7E12 /* LaunchScreen.storyboard */; };
 		007F3D361D7EED2E003F7E12 /* SceneKitObjC_ShooterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 007F3D351D7EED2E003F7E12 /* SceneKitObjC_ShooterTests.m */; };
 		007F3D411D7EED2E003F7E12 /* SceneKitObjC_ShooterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 007F3D401D7EED2E003F7E12 /* SceneKitObjC_ShooterUITests.m */; };
+		00C7901C1DC3F78100A6B58A /* Utilidades.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C7901A1DC3F5F200A6B58A /* Utilidades.framework */; };
+		00C7901D1DC3F78100A6B58A /* Utilidades.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00C7901A1DC3F5F200A6B58A /* Utilidades.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,20 @@
 			remoteInfo = "SceneKitObjC-Shooter";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00C7901E1DC3F78100A6B58A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00C7901D1DC3F78100A6B58A /* Utilidades.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00258F531D7F2FA200CFC079 /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
@@ -68,6 +84,8 @@
 		007F3D3C1D7EED2E003F7E12 /* SceneKitObjC-ShooterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SceneKitObjC-ShooterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		007F3D401D7EED2E003F7E12 /* SceneKitObjC_ShooterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneKitObjC_ShooterUITests.m; sourceTree = "<group>"; };
 		007F3D421D7EED2E003F7E12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C7901A1DC3F5F200A6B58A /* Utilidades.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Utilidades.framework; sourceTree = "<group>"; };
+		00F9C7531DC152B80072C099 /* SceneKitObjC-Shooter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SceneKitObjC-Shooter-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C7901C1DC3F78100A6B58A /* Utilidades.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +121,7 @@
 				007F3D341D7EED2E003F7E12 /* SceneKitObjC-ShooterTests */,
 				007F3D3F1D7EED2E003F7E12 /* SceneKitObjC-ShooterUITests */,
 				007F3D171D7EED2E003F7E12 /* Products */,
+				00C790171DC3F57F00A6B58A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +152,7 @@
 				00258F5A1D7F30FC00CFC079 /* MoveComponent.m */,
 				00258F5C1D7F350E00CFC079 /* GeometryComponent.h */,
 				00258F5D1D7F350E00CFC079 /* GeometryComponent.m */,
+				00F9C7531DC152B80072C099 /* SceneKitObjC-Shooter-Bridging-Header.h */,
 			);
 			path = "SceneKitObjC-Shooter";
 			sourceTree = "<group>";
@@ -192,6 +213,14 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		00C790171DC3F57F00A6B58A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00C7901A1DC3F5F200A6B58A /* Utilidades.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,6 +231,7 @@
 				007F3D121D7EED2E003F7E12 /* Sources */,
 				007F3D131D7EED2E003F7E12 /* Frameworks */,
 				007F3D141D7EED2E003F7E12 /* Resources */,
+				00C7901E1DC3F78100A6B58A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,12 +284,13 @@
 		007F3D0E1D7EED2E003F7E12 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Pedro Brandão";
 				TargetAttributes = {
 					007F3D151D7EED2E003F7E12 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = U3A2WCJ8XS;
+						LastSwiftMigration = 0800;
 					};
 					007F3D301D7EED2E003F7E12 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -402,8 +433,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -447,8 +480,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -475,22 +510,47 @@
 		007F3D461D7EED2F003F7E12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "SceneKitObjC-Shooter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pcrbrandao.SceneKitObjC-Shooter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SceneKitObjC-Shooter/SceneKitObjC-Shooter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		007F3D471D7EED2F003F7E12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "SceneKitObjC-Shooter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pcrbrandao.SceneKitObjC-Shooter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SceneKitObjC-Shooter/SceneKitObjC-Shooter-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

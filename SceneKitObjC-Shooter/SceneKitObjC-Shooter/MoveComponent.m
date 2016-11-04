@@ -8,50 +8,75 @@
 
 #import "MoveComponent.h"
 #import "GeometryComponent.h"
+#import "MainScene.h"
+#import <GLKit/GLKit.h>
+#import <Utilidades/Utilidades.h>
+
+@import Utilidades;
 
 @interface MoveComponent()
 
--(GeometryComponent *)getGeometryComponent;
+@property (nonatomic,retain)SCNNode *node;
 
 @end
 
 @implementation MoveComponent
 
--(instancetype)initWithMaxSpeed:(CGFloat)maxSpeed MaxAcceleration:(CGFloat)maxAccell andRadius:(CGFloat)radius {
-    
+-(instancetype)initWithNode:(SCNNode *)node {
     self = [super init];
     if (self) {
-        self.delegate = self;
-        self.maxSpeed = maxSpeed;
-        self.maxAcceleration = maxAccell;
-        self.radius = radius;
-        self.mass = 0.01;
+        _node = node;
     }
     return self;
 }
 
--(void)agentWillUpdate:(GKAgent *)agent {
-    if (self.getGeometryComponent) {
-        self.position = vector2(self.getGeometryComponent.node.position.x
-                                , self.getGeometryComponent.node.position.y);
-    }
+-(void)moveWithTap:(UITapGestureRecognizer *)tap inView:(SCNView *)view {
+    [self.node.physicsBody applyForce:[self vectorWithTap:tap inView:view] impulse:YES];
 }
 
--(void)agentDidUpdate:(GKAgent *)agent {
-    if (self.getGeometryComponent) {
-        self.getGeometryComponent.node.position = SCNVector3Make(self.position.x, 0.0f, self.position.y);
-    }
-}
-
--(GeometryComponent *)getGeometryComponent {
-    GeometryComponent *component = nil;
+-(SCNVector3)vectorWithTap:(UITapGestureRecognizer *)tap inView:(SCNView *)view {
     
-    if ([self entity]) {
-        if ([self.entity componentForClass:GeometryComponent.self]) {
-            component = (GeometryComponent *)[self.entity componentForClass:GeometryComponent.self];
+    SCNVector3 playerLocation = [self.node.presentationNode position];
+    CGPoint tapLocation = [tap locationInView:(UIView *)view];
+    SCNHitTestResult *shape = nil;
+    SCNVector3 floorPosition;
+    SCNVector3 vectorReturn;
+    // CGFloat forca = 1;
+    
+    NSArray<SCNHitTestResult *> *hitResults = [(SCNView *)view hitTest:tapLocation options:nil];
+    
+    if (hitResults && hitResults.count > 0) {
+        shape = [hitResults firstObject];
+        
+        if (shape && [shape.node.name isEqualToString:@"planeFloor"]) {
+            floorPosition = [shape localCoordinates];
+            
+            /*
+            CGFloat playerZ = playerLocation.z;
+            CGFloat floorY = (floorPosition.y * -1);
+            CGFloat distY = floorY - playerZ;
+            
+            CGFloat angle = atan2f(distY, floorPosition.x - playerLocation.x);
+            
+            NSLog(@"---*****----*****----");
+            CGFloat vectorZ = sinf(angle);
+            CGFloat vectorX = cos(angle);
+            vectorReturn = SCNVector3Make(vectorX, 0.0, vectorZ);
+            NSLog(@"Angulo, seno e cosseno...: %f, %f, %f, %f", angle, GLKMathRadiansToDegrees(angle), vectorZ, vectorX);
+             */
+            // Games *games = [[Games alloc] init];
+            vectorReturn = [Games unityVectorFromVector:playerLocation toPoint:floorPosition];
         }
     }
-    return component;
+    return vectorReturn;
+}
+
+-(void)logPositionInNode:(SCNNode *)node withDescription:(NSString *)description {
+    NSLog(@"%@..........: %f, %f", description, node.position.x, node.position.z);
+}
+
+-(void)updateWithDeltaTime:(NSTimeInterval)seconds {
+    //[self logPositionInNode:self.node withDescription:@"no moveComponent"];
 }
 
 @end

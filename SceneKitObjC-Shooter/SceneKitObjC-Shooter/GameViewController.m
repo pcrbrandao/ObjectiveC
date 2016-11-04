@@ -17,6 +17,7 @@
     _gameController = [GameController sharedController];
     _scnView = (SCNView *)self.view;
     _scnView.scene = _gameController.scene;
+    _scnView.delegate = _gameController;
     
     /*
     // create a new scene
@@ -137,8 +138,10 @@
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
 }
-
-- (IBAction)panGesture:(UIPanGestureRecognizer *)sender {
-    [self.gameController handlePanGesture:sender];
+- (IBAction)tapGesture:(UITapGestureRecognizer *)sender {
+    [self.gameController handleTapGesture:sender inView:self.scnView];
 }
+
+
+
 @end
