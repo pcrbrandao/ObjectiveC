@@ -40,7 +40,6 @@
 		009DF1C71DA4620F00C67D0A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1BF1DA4620F00C67D0A /* FBSDKLoginKit.framework */; };
 		009DF1C81DA4620F00C67D0A /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1C01DA4620F00C67D0A /* FBSDKMessengerShareKit.framework */; };
 		009DF1C91DA4620F00C67D0A /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DF1C11DA4620F00C67D0A /* FBSDKShareKit.framework */; };
-		00CDB2261DA2B8D000F1E08F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 00CDB2251DA2B8D000F1E08F /* .gitignore */; };
 		00E463FC1DA1693400A8E695 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 00E463FB1DA1693400A8E695 /* Podfile */; };
 		60C8AFA15D174DBD63F81593 /* Pods_MostreMeuLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11C7C16F370E09AF87482CD /* Pods_MostreMeuLoginTests.framework */; };
 		757E904998C2D07A28F2180D /* Pods_MostreMeuLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53F270AB3A9E9656CF24BAC /* Pods_MostreMeuLogin.framework */; };
@@ -108,7 +107,6 @@
 		009DF1BF1DA4620F00C67D0A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		009DF1C01DA4620F00C67D0A /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		009DF1C11DA4620F00C67D0A /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
-		00CDB2251DA2B8D000F1E08F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		00E463FB1DA1693400A8E695 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		058FA63FC1353A5EFD5CEE72 /* Pods-MostreMeuLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MostreMeuLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MostreMeuLogin/Pods-MostreMeuLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		36C6815ABFC09CC98BBFE2E3 /* Pods-MostreMeuLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MostreMeuLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-MostreMeuLogin/Pods-MostreMeuLogin.release.xcconfig"; sourceTree = "<group>"; };
@@ -258,7 +256,6 @@
 			isa = PBXGroup;
 			children = (
 				000E51B51DAE5E7B0012B09E /* MostreMeuLogin.entitlements */,
-				00CDB2251DA2B8D000F1E08F /* .gitignore */,
 				001BE7011DA13F4000995588 /* AppDelegate.h */,
 				001BE7021DA13F4000995588 /* AppDelegate.m */,
 				001BE70F1DA13F4000995588 /* Info.plist */,
@@ -456,7 +453,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00CDB2261DA2B8D000F1E08F /* .gitignore in Resources */,
 				001BE70E1DA13F4000995588 /* LaunchScreen.storyboard in Resources */,
 				001BE70B1DA13F4000995588 /* Assets.xcassets in Resources */,
 				00E463FC1DA1693400A8E695 /* Podfile in Resources */,
