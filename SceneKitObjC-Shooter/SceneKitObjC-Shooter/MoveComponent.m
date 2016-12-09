@@ -29,11 +29,16 @@
     }
     return self;
 }
-
+/**
+ * @brief Move o player com base da posição do tap na tela
+ */
 -(void)moveWithTap:(UITapGestureRecognizer *)tap inView:(SCNView *)view {
     [self.node.physicsBody applyForce:[self vectorWithTap:tap inView:view] impulse:YES];
 }
 
+/**
+ * @brief Retorna um vetor unitário na direção em que o player deve ir
+ */
 -(SCNVector3)vectorWithTap:(UITapGestureRecognizer *)tap inView:(SCNView *)view {
     
     SCNVector3 playerLocation = [self.node.presentationNode position];
@@ -41,7 +46,6 @@
     SCNHitTestResult *shape = nil;
     SCNVector3 floorPosition;
     SCNVector3 vectorReturn;
-    // CGFloat forca = 1;
     
     NSArray<SCNHitTestResult *> *hitResults = [(SCNView *)view hitTest:tapLocation options:nil];
     
@@ -51,30 +55,22 @@
         if (shape && [shape.node.name isEqualToString:@"planeFloor"]) {
             floorPosition = [shape localCoordinates];
             
-            /*
-            CGFloat playerZ = playerLocation.z;
-            CGFloat floorY = (floorPosition.y * -1);
-            CGFloat distY = floorY - playerZ;
-            
-            CGFloat angle = atan2f(distY, floorPosition.x - playerLocation.x);
-            
-            NSLog(@"---*****----*****----");
-            CGFloat vectorZ = sinf(angle);
-            CGFloat vectorX = cos(angle);
-            vectorReturn = SCNVector3Make(vectorX, 0.0, vectorZ);
-            NSLog(@"Angulo, seno e cosseno...: %f, %f, %f, %f", angle, GLKMathRadiansToDegrees(angle), vectorZ, vectorX);
-             */
-            // Games *games = [[Games alloc] init];
             vectorReturn = [Games unityVectorFromVector:playerLocation toPoint:floorPosition];
         }
     }
     return vectorReturn;
 }
 
+/**
+ * @brief Apenas auxilia no debug
+ */
 -(void)logPositionInNode:(SCNNode *)node withDescription:(NSString *)description {
     NSLog(@"%@..........: %f, %f", description, node.position.x, node.position.z);
 }
 
+/**
+ * @warnig Ainda não implementei aqui. Não faz nada ainda
+ */
 -(void)updateWithDeltaTime:(NSTimeInterval)seconds {
     //[self logPositionInNode:self.node withDescription:@"no moveComponent"];
 }
