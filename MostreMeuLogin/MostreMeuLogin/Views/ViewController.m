@@ -9,10 +9,6 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
-@property (nonatomic,retain)NSDictionary *profileParam;
-@property (nonatomic,retain)FBSDKProfile *profile;
-
 @end
 
 @implementation ViewController
@@ -21,39 +17,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    // Esse parâmetro aciona o NSNotificationCenter quando ocorrer alguma mudança
     [FBSDKProfile enableUpdatesOnAccessTokenChange:YES];
-    self.profileParam = @{@"fields": @"id,name,picture"};
     
-    // Facebook button
+    // iniciando objetos FBSDK
     self.loginButton = [[FBSDKLoginButton alloc] init];
+    [self.loginButton setReadPermissions:@[@"email"]];
     self.foto = [[FBSDKProfilePictureView alloc] initWithFrame:CGRectMake(self.view.center.x, self.view.center.y, 280, 280)];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(_currentProfileChanged:)
-                                                 name:FBSDKProfileDidChangeNotification
-                                               object:nil];
-    
+    // O FBSDKProfile.currentProfile deve ser carregado antes de utilizado.
     [FBSDKProfile loadCurrentProfileWithCompletion:^(FBSDKProfile *profile, NSError *error) {
-        [self _updateProfile:profile];
+        self.controller = [Controller sharedControllerWithProfile:profile andViewController:self];
+        [self updateUI];
     }];
 }
 
-- (void)_currentProfileChanged: (NSNotification *)notification {
-    NSLog(@"O notification center disparou a notificação.......: %@", notification);
+/// @brief implementa UIUpdateProtocol
+- (void)updateUI {
     
-    [FBSDKProfile loadCurrentProfileWithCompletion:^(FBSDKProfile *profile, NSError *error) {
-        [self _updateProfile:profile];
-    }];
-}
-
-- (void)_updateProfile: (FBSDKProfile *)profile {
-    
-    if (profile) {
-        self.nome.text = profile.name;
-        self.IDLabel.text = profile.userID;
+    if (self.controller.userProfile) {
+        self.nome.text = self.controller.userProfile.profile.name;
+        self.emailLabel.text = self.controller.userProfile.email;
     } else {
         self.nome.text = @"No active user!";
-        self.IDLabel.text = @"No ID";
+        self.emailLabel.text = @"No email";
     }
 }
 
