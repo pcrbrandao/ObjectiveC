@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0038B6D01E212B5E002E9D4A /* UsuarioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038B6CF1E212B5E002E9D4A /* UsuarioController.m */; };
 		008914C51E20279E0057AC37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 008914C41E20279E0057AC37 /* main.m */; };
 		008914C81E20279E0057AC37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 008914C71E20279E0057AC37 /* AppDelegate.m */; };
 		008914CB1E20279E0057AC37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008914CA1E20279E0057AC37 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 		008914D61E20279E0057AC37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008914D41E20279E0057AC37 /* LaunchScreen.storyboard */; };
 		008914E11E20279E0057AC37 /* CoreDataListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 008914E01E20279E0057AC37 /* CoreDataListTests.m */; };
 		008914EC1E20279E0057AC37 /* CoreDataListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 008914EB1E20279E0057AC37 /* CoreDataListUITests.m */; };
+		008915001E2045080057AC37 /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = 008914FF1E2045080057AC37 /* Usuario.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0038B6CE1E212B5E002E9D4A /* UsuarioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsuarioController.h; sourceTree = "<group>"; };
+		0038B6CF1E212B5E002E9D4A /* UsuarioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsuarioController.m; sourceTree = "<group>"; };
 		008914C01E20279E0057AC37 /* CoreDataList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		008914C41E20279E0057AC37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		008914C61E20279E0057AC37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		008914E71E20279E0057AC37 /* CoreDataListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		008914EB1E20279E0057AC37 /* CoreDataListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataListUITests.m; sourceTree = "<group>"; };
 		008914ED1E20279E0057AC37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		008914FE1E2045080057AC37 /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Usuario.h; sourceTree = "<group>"; };
+		008914FF1E2045080057AC37 /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuario.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +109,12 @@
 		008914C21E20279E0057AC37 /* CoreDataList */ = {
 			isa = PBXGroup;
 			children = (
-				008914C61E20279E0057AC37 /* AppDelegate.h */,
-				008914C71E20279E0057AC37 /* AppDelegate.m */,
-				008914C91E20279E0057AC37 /* ViewController.h */,
-				008914CA1E20279E0057AC37 /* ViewController.m */,
-				008914CC1E20279E0057AC37 /* Main.storyboard */,
-				008914D21E20279E0057AC37 /* Assets.xcassets */,
-				008914D41E20279E0057AC37 /* LaunchScreen.storyboard */,
-				008914D71E20279E0057AC37 /* Info.plist */,
-				008914CF1E20279E0057AC37 /* CoreDataList.xcdatamodeld */,
+				008915011E2046C10057AC37 /* Controllers */,
+				008914FD1E2044C10057AC37 /* Services */,
+				008914FC1E2044800057AC37 /* Domain */,
+				008914F91E2043CD0057AC37 /* Configs */,
+				008914FB1E20442C0057AC37 /* Views */,
+				008914FA1E2044140057AC37 /* Resources */,
 				008914C31E20279E0057AC37 /* Supporting Files */,
 			);
 			path = CoreDataList;
@@ -141,6 +144,61 @@
 				008914ED1E20279E0057AC37 /* Info.plist */,
 			);
 			path = CoreDataListUITests;
+			sourceTree = "<group>";
+		};
+		008914F91E2043CD0057AC37 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				008914C61E20279E0057AC37 /* AppDelegate.h */,
+				008914C71E20279E0057AC37 /* AppDelegate.m */,
+				008914D71E20279E0057AC37 /* Info.plist */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		008914FA1E2044140057AC37 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				008914D21E20279E0057AC37 /* Assets.xcassets */,
+				008914CF1E20279E0057AC37 /* CoreDataList.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		008914FB1E20442C0057AC37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				008914D41E20279E0057AC37 /* LaunchScreen.storyboard */,
+				008914CC1E20279E0057AC37 /* Main.storyboard */,
+				008914C91E20279E0057AC37 /* ViewController.h */,
+				008914CA1E20279E0057AC37 /* ViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		008914FC1E2044800057AC37 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				008914FE1E2045080057AC37 /* Usuario.h */,
+				008914FF1E2045080057AC37 /* Usuario.m */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		008914FD1E2044C10057AC37 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		008915011E2046C10057AC37 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0038B6CE1E212B5E002E9D4A /* UsuarioController.h */,
+				0038B6CF1E212B5E002E9D4A /* UsuarioController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +337,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008915001E2045080057AC37 /* Usuario.m in Sources */,
 				008914D11E20279E0057AC37 /* CoreDataList.xcdatamodeld in Sources */,
+				0038B6D01E212B5E002E9D4A /* UsuarioController.m in Sources */,
 				008914CB1E20279E0057AC37 /* ViewController.m in Sources */,
 				008914C81E20279E0057AC37 /* AppDelegate.m in Sources */,
 				008914C51E20279E0057AC37 /* main.m in Sources */,
@@ -520,6 +580,7 @@
 				008914F21E20279E0057AC37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		008914F31E20279E0057AC37 /* Build configuration list for PBXNativeTarget "CoreDataListTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +589,7 @@
 				008914F51E20279E0057AC37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		008914F61E20279E0057AC37 /* Build configuration list for PBXNativeTarget "CoreDataListUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +598,7 @@
 				008914F81E20279E0057AC37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
