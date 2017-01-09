@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2217D182FFCBCABC010F1678EF997B2DEC515DAD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2217D182FFCBCABC010F1678EF997B2DEC515DAD" : 9223372036854775807,
+    "44558431F5C9598E5CDFD3F38F63FC92E4C3A9E3" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9123053B-3651-47E6-B36D-D199908ED9BD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2217D182FFCBCABC010F1678EF997B2DEC515DAD" : "ObjectiveC\/",
+    "44558431F5C9598E5CDFD3F38F63FC92E4C3A9E3" : "..\/SwiftRepos\/Swift"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SceneKitObjC-Shooter",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SceneKitObjC-Shooter\/SceneKitObjC-Shooter.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pcrbrandao\/ObjectiveC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2217D182FFCBCABC010F1678EF997B2DEC515DAD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pcrbrandao\/Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "44558431F5C9598E5CDFD3F38F63FC92E4C3A9E3"
+    }
+  ]
+}
