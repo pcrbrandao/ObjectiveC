@@ -16,7 +16,6 @@
 		008914D11E20279E0057AC37 /* CoreDataList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 008914CF1E20279E0057AC37 /* CoreDataList.xcdatamodeld */; };
 		008914D31E20279E0057AC37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 008914D21E20279E0057AC37 /* Assets.xcassets */; };
 		008914D61E20279E0057AC37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008914D41E20279E0057AC37 /* LaunchScreen.storyboard */; };
-		008914E11E20279E0057AC37 /* CoreDataListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 008914E01E20279E0057AC37 /* CoreDataListTests.m */; };
 		008914EC1E20279E0057AC37 /* CoreDataListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 008914EB1E20279E0057AC37 /* CoreDataListUITests.m */; };
 		008915001E2045080057AC37 /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = 008914FF1E2045080057AC37 /* Usuario.m */; };
 /* End PBXBuildFile section */
@@ -54,13 +53,13 @@
 		008914D51E20279E0057AC37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		008914D71E20279E0057AC37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		008914DC1E20279E0057AC37 /* CoreDataListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		008914E01E20279E0057AC37 /* CoreDataListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataListTests.m; sourceTree = "<group>"; };
 		008914E21E20279E0057AC37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		008914E71E20279E0057AC37 /* CoreDataListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		008914EB1E20279E0057AC37 /* CoreDataListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataListUITests.m; sourceTree = "<group>"; };
 		008914ED1E20279E0057AC37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		008914FE1E2045080057AC37 /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Usuario.h; sourceTree = "<group>"; };
 		008914FF1E2045080057AC37 /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuario.m; sourceTree = "<group>"; };
+		009DF1251E256541008146EB /* Textos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Textos.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +110,7 @@
 		008914C21E20279E0057AC37 /* CoreDataList */ = {
 			isa = PBXGroup;
 			children = (
+				009DF1241E2563A5008146EB /* Utils */,
 				008915011E2046C10057AC37 /* Controllers */,
 				008914FD1E2044C10057AC37 /* Services */,
 				008914FC1E2044800057AC37 /* Domain */,
@@ -133,7 +133,6 @@
 		008914DF1E20279E0057AC37 /* CoreDataListTests */ = {
 			isa = PBXGroup;
 			children = (
-				008914E01E20279E0057AC37 /* CoreDataListTests.m */,
 				008914E21E20279E0057AC37 /* Info.plist */,
 				0073B1291E23D0DA00F35B9E /* UsuarioControllerTests.m */,
 			);
@@ -202,6 +201,14 @@
 				0038B6CF1E212B5E002E9D4A /* UsuarioController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		009DF1241E2563A5008146EB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				009DF1251E256541008146EB /* Textos.h */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,7 +361,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0073B12A1E23D0DA00F35B9E /* UsuarioControllerTests.m in Sources */,
-				008914E11E20279E0057AC37 /* CoreDataListTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

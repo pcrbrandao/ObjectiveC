@@ -33,7 +33,7 @@
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     Usuario *joao = [Usuario NewUsuarioWithNome:@"João" andSenha:@"1234"];
-    [self.controller.usuarios removeAllObjects];
+    [joao setID:[self.controller usuariosCount]];
     
     NSError *err = [self.controller addUsuario:joao];
     
@@ -41,8 +41,9 @@
         XCTAssert(NO);
     }
     
-    Usuario *retorno = [self.controller.usuarios firstObject];
+    Usuario *retorno = [self.controller usuarioComID:joao.ID];
     NSLog(@"\n....Retorno %@", [retorno nome]);
+    [self.controller removeUsuarioComID:joao.ID];
     
     XCTAssert([retorno.nome isEqualToString:joao.nome]);
 }

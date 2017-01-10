@@ -17,15 +17,11 @@
  * @brief Requer um usuário válido e retorna nil se tudo correr bem.
  */
 -(NSError *)addUsuario:(Usuario *)usuario;
+-(NSInteger)usuariosCount;
+-(NSError *)removeUsuarioComID:(NSInteger)ID;
+-(Usuario *)usuarioComID:(NSInteger)ID;
+
 +(UsuarioController *)sharedInstance;
 @end
 
-/**
- * @brief Aqui estão as propriedades privadas
- */
-@interface UsuarioController()
-/**
- * @brief Provisioramente os dados serão armazenados nesse array.
- */
-@property (nonatomic,retain) NSMutableArray<Usuario *> *usuarios;
-@end
+

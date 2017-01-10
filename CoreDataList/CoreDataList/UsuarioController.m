@@ -7,6 +7,16 @@
 //
 
 #import "UsuarioController.h"
+#import "Textos.h"
+
+#pragma mark Privates
+
+@interface UsuarioController()
+/**
+ * @brief Provisioramente os dados serão armazenados nesse array.
+ */
+@property (nonatomic,retain) NSMutableArray<Usuario *> *usuarios;
+@end
 
 /**
  * @brief A variável estática é para o controle da instância.
@@ -32,8 +42,8 @@ static UsuarioController *sharedInstance = nil;
 -(NSError *)addUsuario:(Usuario *)usuario {
     
     // O detalhe do erro
-    NSDictionary *details = @{NSLocalizedDescriptionKey:@"Usuário inválido"};
-    NSError *err = [NSError errorWithDomain:@"UsuarioController" code:-1 userInfo:details];
+    NSDictionary *details = @{NSLocalizedDescriptionKey:mINVALID_USER};
+    NSError *err = [NSError errorWithDomain:kUSUARIO_CONTROLLER code:-1 userInfo:details];
     
     if (!usuario) {
         return err;
@@ -44,6 +54,55 @@ static UsuarioController *sharedInstance = nil;
     NSLog(@"\nUsuarios na lista: %d", [self.usuarios count]);
     
     return nil;
+}
+
+/**
+ * @brief A quantidade de usuarios é a de usuários em memória
+ * e não a de usuários cadastrados, que podem não ser carregados
+ * todos por motivo de limites de memória
+ */
+-(NSInteger)usuariosCount {
+    return self.usuarios.count;
+}
+
+/**
+ * @brief Antes de excluir o método verifica se o ID é válido
+ * e retorna o erro, caso não seja, ou nil se tudo der certo
+ */
+-(NSError *)removeUsuarioComID:(NSInteger)ID {
+    
+    // O detalhe do erro
+    NSDictionary *details = @{NSLocalizedDescriptionKey:mINVALID_ID};
+    NSError *err = [NSError errorWithDomain:kUSUARIO_CONTROLLER code:-1 userInfo:details];
+    
+    if (self.usuarios.count == 0) {
+        details = @{NSLocalizedDescriptionKey:mLISTA_VAZIA};
+        return err;
+    }
+    
+    if (![self isValidID:ID]) {
+        return err;
+    }
+    
+    [self.usuarios removeObjectAtIndex:ID];
+    
+    return nil;
+}
+
+-(Usuario *)usuarioComID:(NSInteger)ID {
+    if (![self isValidID:ID]) {
+        return nil;
+    }
+    return self.usuarios[ID];
+}
+
+-(BOOL)isValidID:(NSInteger)ID {
+    
+    if (ID < 0 || ID > self.usuarios.count - 1) {
+        return NO;
+    }
+    
+    return YES;
 }
 
 @end
