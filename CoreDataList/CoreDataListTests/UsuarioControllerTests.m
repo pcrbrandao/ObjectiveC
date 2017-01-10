@@ -41,7 +41,7 @@
         XCTAssert(NO);
     }
     
-    Usuario *retorno = [self.controller usuarioComID:joao.ID];
+    Usuario *retorno = [self.controller.usuarios firstObject];
     NSLog(@"\n....Retorno %@", [retorno nome]);
     [self.controller removeUsuarioComID:joao.ID];
     

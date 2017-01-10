@@ -7,7 +7,6 @@
 //
 
 #import "UsuarioController.h"
-<<<<<<< HEAD
 #import "Textos.h"
 
 #pragma mark Privates
@@ -18,8 +17,6 @@
  */
 @property (nonatomic,retain) NSMutableArray<Usuario *> *usuarios;
 @end
-=======
->>>>>>> 29b2eca9e61cbae0af14f3473fa8dceb14329c64
 
 /**
  * @brief A variável estática é para o controle da instância.
@@ -34,15 +31,11 @@ static UsuarioController *sharedInstance = nil;
 +(UsuarioController *)sharedInstance {
     if (!sharedInstance) {
         sharedInstance = [[UsuarioController alloc] init];
-<<<<<<< HEAD
         sharedInstance.usuarios = [[NSMutableArray alloc] init];
-=======
->>>>>>> 29b2eca9e61cbae0af14f3473fa8dceb14329c64
     }
     return sharedInstance;
 }
 
-<<<<<<< HEAD
 /**
  * @brief Retorna um erro caso o usuário não seja válido ou nil se estiver ok
  */
@@ -112,11 +105,4 @@ static UsuarioController *sharedInstance = nil;
     return YES;
 }
 
-=======
--(NSError *)addUsuario:(Usuario *)usuario {
-    
-    return nil;
-}
-
->>>>>>> 29b2eca9e61cbae0af14f3473fa8dceb14329c64
 @end
