@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>criar</key>
+	<string>/criar</string>
+	<key>encontranome</key>
+	<string>/encontranome</string>
+	<key>usuarios</key>
+	<string>/listarusuarios</string>
+	<key>root</key>
+	<string>http://localhost:8080/usuarios/services</string>
+	<key>encontraid</key>
+	<string>/encontraid</string>
+</dict>
+</plist>
