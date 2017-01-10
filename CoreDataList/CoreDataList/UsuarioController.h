@@ -13,11 +13,24 @@
  * @brief Fornece métodos para acesso os dados de usuários. É um singleton.
  */
 @interface UsuarioController : NSObject
+<<<<<<< HEAD
+=======
 
+>>>>>>> 29b2eca9e61cbae0af14f3473fa8dceb14329c64
 /**
  * @brief Requer um usuário válido e retorna nil se tudo correr bem.
  */
 -(NSError *)addUsuario:(Usuario *)usuario;
+<<<<<<< HEAD
+-(NSInteger)usuariosCount;
+-(NSError *)removeUsuarioComID:(NSInteger)ID;
+-(Usuario *)usuarioComID:(NSInteger)ID;
+
++(UsuarioController *)sharedInstance;
+@end
+
+
+=======
 
 @end
 
@@ -32,3 +45,4 @@
 @property (nonatomic,retain) NSMutableArray<Usuario *> *usuarios;
 
 @end
+>>>>>>> 29b2eca9e61cbae0af14f3473fa8dceb14329c64
