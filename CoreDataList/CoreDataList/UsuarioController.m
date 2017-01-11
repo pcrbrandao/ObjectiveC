@@ -9,7 +9,7 @@
 #import "UsuarioController.h"
 #import "Textos.h"
 
-#pragma mark Privates
+#pragma mark Private Properties
 
 @interface UsuarioController()
 /**
@@ -36,6 +36,7 @@ static UsuarioController *sharedInstance = nil;
     return sharedInstance;
 }
 
+#pragma mark Public Methods
 /**
  * @brief Retorna um erro caso o usuário não seja válido ou nil se estiver ok
  */
@@ -69,7 +70,7 @@ static UsuarioController *sharedInstance = nil;
  * @brief Antes de excluir o método verifica se o ID é válido
  * e retorna o erro, caso não seja, ou nil se tudo der certo
  */
--(NSError *)removeUsuarioComID:(NSInteger)ID {
+-(NSError *)removeUsuarioID:(NSInteger)ID {
     
     // O detalhe do erro
     NSDictionary *details = @{NSLocalizedDescriptionKey:mINVALID_ID};
@@ -89,13 +90,33 @@ static UsuarioController *sharedInstance = nil;
     return nil;
 }
 
--(Usuario *)usuarioComID:(NSInteger)ID {
+/**
+ * @brief Se o ID existe retorna o usuário correspondente
+ */
+-(Usuario *)usuarioID:(NSInteger)ID {
     if (![self isValidID:ID]) {
         return nil;
     }
     return self.usuarios[ID];
 }
 
+/**
+ * @brief Aqui eu uso o NSPredicate para encontrar o nome no array. Se existe retorna, se não retorna nil.
+ */
+-(Usuario *)usuarioNome:(NSString *)nome {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"nome == %@", nome];
+    NSArray *usuarioArray = [self.usuarios filteredArrayUsingPredicate:predicate];
+    if (usuarioArray.count > 0) {
+        return [usuarioArray firstObject];
+    }
+    return nil;
+}
+
+#pragma mark Private Methods
+
+/**
+ * @brief Testa se o ID é válido
+ */
 -(BOOL)isValidID:(NSInteger)ID {
     
     if (ID < 0 || ID > self.usuarios.count - 1) {

@@ -18,8 +18,9 @@
  */
 -(NSError *)addUsuario:(Usuario *)usuario;
 -(NSInteger)usuariosCount;
--(NSError *)removeUsuarioComID:(NSInteger)ID;
--(Usuario *)usuarioComID:(NSInteger)ID;
+-(NSError *)removeUsuarioID:(NSInteger)ID;
+-(Usuario *)usuarioID:(NSInteger)ID;
+-(Usuario *)usuarioNome:(NSString *)nome;
 
 +(UsuarioController *)sharedInstance;
 @end
