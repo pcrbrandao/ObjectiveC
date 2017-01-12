@@ -17,10 +17,13 @@
  * @brief Requer um usuário válido e retorna nil se tudo correr bem.
  */
 -(NSError *)addUsuario:(Usuario *)usuario;
--(NSInteger)usuariosCount;
 -(NSError *)removeUsuarioID:(NSInteger)ID;
+-(NSError *)updateUsuario:(Usuario *)usuario;
+
 -(Usuario *)usuarioID:(NSInteger)ID;
 -(Usuario *)usuarioNome:(NSString *)nome;
+-(NSArray<Usuario *> *)usuarioList;
+-(NSInteger)usuariosCount;
 
 +(UsuarioController *)sharedInstance;
 @end

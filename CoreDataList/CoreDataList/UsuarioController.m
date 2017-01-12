@@ -38,7 +38,7 @@ static UsuarioController *sharedInstance = nil;
 
 #pragma mark Public Methods
 /**
- * @brief Retorna um erro caso o usuário não seja válido ou nil se estiver ok
+ * @brief Retorna um erro caso o usuário não seja válido ou nil se estiver ok.
  */
 -(NSError *)addUsuario:(Usuario *)usuario {
     
@@ -55,15 +55,6 @@ static UsuarioController *sharedInstance = nil;
     NSLog(@"\nUsuarios na lista: %d", [self.usuarios count]);
     
     return nil;
-}
-
-/**
- * @brief A quantidade de usuarios é a de usuários em memória
- * e não a de usuários cadastrados, que podem não ser carregados
- * todos por motivo de limites de memória
- */
--(NSInteger)usuariosCount {
-    return self.usuarios.count;
 }
 
 /**
@@ -90,6 +81,33 @@ static UsuarioController *sharedInstance = nil;
     return nil;
 }
 
+// !!!: Falta o teste.
+/**
+ * @brief Atualiza um usuário, se existir.
+ */
+-(NSError *)updateUsuario:(Usuario *)usuario {
+    // Detalhe do erro
+    NSDictionary *details = @{NSLocalizedDescriptionKey:mINVALID_ID};
+    NSError *err = [NSError errorWithDomain:kUSUARIO_CONTROLLER code:-1 userInfo:details];
+    
+    if (self.usuarios.count == 0) {
+        details = @{NSLocalizedDescriptionKey:mLISTA_VAZIA};
+        return err;
+    }
+    
+    if (!usuario) {
+        return err;
+    }
+    
+    if (![self isValidID:usuario.ID]) {
+        return err;
+    }
+    
+    self.usuarios[usuario.ID] = usuario;
+    
+    return nil;
+}
+
 /**
  * @brief Se o ID existe retorna o usuário correspondente
  */
@@ -110,6 +128,22 @@ static UsuarioController *sharedInstance = nil;
         return [usuarioArray firstObject];
     }
     return nil;
+}
+
+/**
+ * @brief Obtém a lista de usuários.
+ */
+-(NSArray<Usuario *> *)usuarioList {
+    return (NSArray<Usuario *> *)self.usuarios;
+}
+
+/**
+ * @brief A quantidade de usuarios é a de usuários em memória
+ * e não a de usuários cadastrados, que podem não ser carregados
+ * todos por motivo de limites de memória
+ */
+-(NSInteger)usuariosCount {
+    return self.usuarios.count;
 }
 
 #pragma mark Private Methods

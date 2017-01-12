@@ -66,6 +66,10 @@
 }
 
 /**
+ * @brief 
+ */
+
+/**
  * @brief Um método auxiliar para acrescentar um usuário.
  */
 - (NSError *)addUsuarioJoao {
