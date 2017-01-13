@@ -81,7 +81,6 @@ static UsuarioController *sharedInstance = nil;
     return nil;
 }
 
-// !!!: Falta o teste.
 /**
  * @brief Atualiza um usuário, se existir.
  */

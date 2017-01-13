@@ -66,8 +66,22 @@
 }
 
 /**
- * @brief 
+ * @brief Acrescenta, atualiza, deleta e testa
  */
+-(void)testDeveAtualizarUsuarioParaPedro {
+    
+    NSError *err = [self addUsuarioJoao];
+    if (err) {
+        XCTAssert(NO);
+    }
+    
+    Usuario *usuarioAserAtualizado = [self.controller usuarioNome:@"João"];
+    [usuarioAserAtualizado setNome:@"Pedro"];
+    [self.controller updateUsuario:usuarioAserAtualizado];
+    
+    Usuario *usuarioAtualizado = [self.controller usuarioID:usuarioAserAtualizado.ID];
+    XCTAssert([usuarioAtualizado.nome isEqualToString:@"Pedro"]);
+}
 
 /**
  * @brief Um método auxiliar para acrescentar um usuário.
