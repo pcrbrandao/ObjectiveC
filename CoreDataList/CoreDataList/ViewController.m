@@ -10,6 +10,9 @@
 
 @interface ViewController ()
 
+@property (retain, nonatomic) UsuarioController *usuarioController;
+@property (retain, nonatomic) UsuariosTableViewController *usuariosTableViewController;
+
 @end
 
 @implementation ViewController
@@ -17,6 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.usuariosTableViewController = [UsuariosTableViewController sharedInstance];
+    
+    self.usuariosTableView.dataSource = self.usuariosTableViewController;
+    self.usuariosTableView.delegate = self.usuariosTableViewController;
 }
 
 
@@ -26,4 +33,6 @@
 }
 
 
+- (IBAction)doAction:(UIButton *)sender {
+}
 @end
