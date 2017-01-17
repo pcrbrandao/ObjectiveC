@@ -52,4 +52,24 @@
     XCTAssert([nomeObtido isEqualToString:nome]);
 }
 
+- (void)testDeveInserirTresRegistros {
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    
+    NSArray *usuarios = @[
+  @{ @"nome": @"user1", @"senha": @"1234" },
+  @{ @"nome": @"user2", @"senha": @"2234" },
+  @{ @"nome": @"user3", @"senha": @"3234" } ];
+    
+    for( NSDictionary *user in usuarios) {
+        [app.textFields[@"nomeField"] tap];
+        [app.textFields[@"nomeField"] typeText:user[@"nome"]];
+        [app.textFields[@"senhaField"] tap];
+        [app.textFields[@"senhaField"] typeText:user[@"senha"]];
+        [app.buttons[@"actionButton"] tap];
+    }
+    
+    XCTAssert(YES);
+}
+
 @end
