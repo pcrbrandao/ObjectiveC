@@ -8,6 +8,7 @@
 
 #import "UsuarioController.h"
 #import "Textos.h"
+#import <CoreData/CoreData.h>
 
 #pragma mark Private Properties
 
