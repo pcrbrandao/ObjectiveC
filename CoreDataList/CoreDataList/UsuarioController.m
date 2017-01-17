@@ -41,6 +41,7 @@ static UsuarioController *sharedInstance = nil;
  * @brief Adiciona usuario com nome e senha
  */
 -(NSError *)addUsuarioComNome:(NSString *)nome eSenha:(NSString *)senha {
+    
     Usuario *usuario = [Usuario NewUsuarioWithNome:nome andSenha:senha];
     NSError *err = [self addUsuario:usuario];
     
@@ -63,6 +64,19 @@ static UsuarioController *sharedInstance = nil;
     NSError *err = [NSError errorWithDomain:kUSUARIO_CONTROLLER code:-1 userInfo:details];
     
     if (!usuario) {
+        return err;
+    }
+    
+    NSInteger nomel = [usuario.nome length];
+    NSInteger senhal = [usuario.senha length];
+    
+    if (nomel <= 0 || senhal <= 0 ||
+        nomel > 16 || senhal > 16) {
+        return err;
+    }
+    
+    Usuario *existente = [self usuarioNome:usuario.nome];
+    if (existente) {
         return err;
     }
     

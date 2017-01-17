@@ -84,6 +84,55 @@
 }
 
 /**
+ * @brief Acrescentar usuário duplicado deve dar erro
+ */
+-(void)testUsuarioDuplicadoDeveDarErro {
+    
+    NSError *err = [self addUsuarioJoao];
+    
+    if (err) {
+        XCTAssert(NO);
+        return;
+    }
+    
+    err = [self addUsuarioJoao];
+    if (!err) {
+        XCTAssert(NO);
+        return;
+    }
+    
+    XCTAssert(YES);
+}
+
+/**
+ * @brief Acrescentar nome ou senha em branco deve dar erro
+ */
+-(void)testNomeOuSenhaEmBrancoDeveDarErro {
+    
+    NSError *err = [self.controller addUsuarioComNome:@"" eSenha:@""];
+    
+    if (!err) {
+        XCTAssert(NO);
+        return;
+    }
+    
+    XCTAssert(YES);
+}
+
+-(void)testNomeOuSenhaMaiorQue16DeveDarErro {
+    NSError *err = [self.controller addUsuarioComNome:@"12345678901234567" eSenha:@"1234"];
+    err = [self.controller addUsuarioComNome:@"nome" eSenha:@"12345678901234567"];
+    
+    if (!err) {
+        XCTAssert(NO);
+        return;
+    }
+    
+    XCTAssert(YES);
+}
+
+
+/**
  * @brief Um método auxiliar para acrescentar um usuário.
  */
 - (NSError *)addUsuarioJoao {

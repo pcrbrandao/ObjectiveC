@@ -38,20 +38,22 @@
         
         NSError *err = [self.usuarioController addUsuarioComNome:self.nomeField.text
                                            eSenha:self.senhaField.text];
+        [self limpaFields];
+        
         if (!err) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.usuariosTableView reloadData];
             });
-            
-            self.senhaField.text = @"";
-            self.nomeField.text = @"";
-            [self.nomeField becomeFirstResponder];
-            
-            return;
         }
         
         NSLog(@"\n\nHouve um erro aqui.... %@", err.localizedDescription);
     }
+}
+
+- (void)limpaFields {
+    self.senhaField.text = @"";
+    self.nomeField.text = @"";
+    [self.nomeField becomeFirstResponder];
 }
 
 #pragma mark - Table view data source
