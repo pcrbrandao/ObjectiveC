@@ -32,9 +32,24 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testDeveAdicionarUmRegistroNaTabela {
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    NSString *nome = @"Pedro";
+    NSString *senha = @"1234";
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    
+    [app.textFields[@"nomeField"] typeText:nome];
+    [app.textFields[@"senhaField"] tap];
+    [app.textFields[@"senhaField"] typeText:senha];
+    [app.buttons[@"actionButton"] tap];
+    [app.textFields[@"nomeField"] tap];
+    
+    XCUIElement *cell = app.tables.cells.staticTexts[nome];
+    NSString *nomeObtido = cell.label;
+    
+    XCTAssert([nomeObtido isEqualToString:nome]);
 }
 
 @end

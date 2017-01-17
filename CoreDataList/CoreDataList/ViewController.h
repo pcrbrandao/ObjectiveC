@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "UsuarioController.h"
-#import "UsuariosTableViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UILabel *idLabel;
 @property (weak, nonatomic) IBOutlet UITextField *nomeField;

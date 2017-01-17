@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0018B6C51E29224E00E08F9E /* UsuariosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B6C41E29224E00E08F9E /* UsuariosTableViewController.m */; };
 		0038B6D01E212B5E002E9D4A /* UsuarioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038B6CF1E212B5E002E9D4A /* UsuarioController.m */; };
 		0073B12A1E23D0DA00F35B9E /* UsuarioControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073B1291E23D0DA00F35B9E /* UsuarioControllerTests.m */; };
 		008914C51E20279E0057AC37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 008914C41E20279E0057AC37 /* main.m */; };
@@ -39,8 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0018B6C31E29224E00E08F9E /* UsuariosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsuariosTableViewController.h; sourceTree = "<group>"; };
-		0018B6C41E29224E00E08F9E /* UsuariosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsuariosTableViewController.m; sourceTree = "<group>"; };
 		0038B6CE1E212B5E002E9D4A /* UsuarioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsuarioController.h; sourceTree = "<group>"; };
 		0038B6CF1E212B5E002E9D4A /* UsuarioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsuarioController.m; sourceTree = "<group>"; };
 		0073B1291E23D0DA00F35B9E /* UsuarioControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsuarioControllerTests.m; sourceTree = "<group>"; };
@@ -177,8 +174,6 @@
 				008914CC1E20279E0057AC37 /* Main.storyboard */,
 				008914C91E20279E0057AC37 /* ViewController.h */,
 				008914CA1E20279E0057AC37 /* ViewController.m */,
-				0018B6C31E29224E00E08F9E /* UsuariosTableViewController.h */,
-				0018B6C41E29224E00E08F9E /* UsuariosTableViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -358,7 +353,6 @@
 				008914CB1E20279E0057AC37 /* ViewController.m in Sources */,
 				008914C81E20279E0057AC37 /* AppDelegate.m in Sources */,
 				008914C51E20279E0057AC37 /* main.m in Sources */,
-				0018B6C51E29224E00E08F9E /* UsuariosTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -38,6 +38,22 @@ static UsuarioController *sharedInstance = nil;
 
 #pragma mark Public Methods
 /**
+ * @brief Adiciona usuario com nome e senha
+ */
+-(NSError *)addUsuarioComNome:(NSString *)nome eSenha:(NSString *)senha {
+    Usuario *usuario = [Usuario NewUsuarioWithNome:nome andSenha:senha];
+    NSError *err = [self addUsuario:usuario];
+    
+    if (!err) {
+        NSLog(@"\n\nTudo certo! usuário adicionado com sucesso!");
+        return nil;
+    }
+    
+    NSLog(@"\n\nOcorreu um erro.... %@", err.localizedDescription);
+    return err;
+}
+
+/**
  * @brief Retorna um erro caso o usuário não seja válido ou nil se estiver ok.
  */
 -(NSError *)addUsuario:(Usuario *)usuario {
@@ -51,9 +67,6 @@ static UsuarioController *sharedInstance = nil;
     }
     
     [self.usuarios addObject:usuario];
-    NSLog(@"\nUsuário acrescentado com sucesso! %@", [usuario nome]);
-    NSLog(@"\nUsuarios na lista: %d", [self.usuarios count]);
-    
     return nil;
 }
 

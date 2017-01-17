@@ -19,6 +19,7 @@
 -(NSError *)addUsuario:(Usuario *)usuario;
 -(NSError *)removeUsuarioID:(NSInteger)ID;
 -(NSError *)updateUsuario:(Usuario *)usuario;
+-(NSError *)addUsuarioComNome:(NSString *)nome eSenha:(NSString *)senha;
 
 -(Usuario *)usuarioID:(NSInteger)ID;
 -(Usuario *)usuarioNome:(NSString *)nome;
