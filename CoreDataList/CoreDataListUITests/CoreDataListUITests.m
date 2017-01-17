@@ -69,7 +69,10 @@
         [app.buttons[@"actionButton"] tap];
     }
     
-    XCTAssert(YES);
+    NSInteger cellsCount = [app.tables.cells count];
+    NSLog(@"\n\nQuantas linhas na tabela ? %d\n\n", cellsCount);
+
+    XCTAssert(cellsCount == 3);
 }
 
 @end
