@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001B6D641E301684008A33D6 /* CoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001B6D631E301684008A33D6 /* CoreDataController.m */; };
 		0038B6D01E212B5E002E9D4A /* UsuarioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038B6CF1E212B5E002E9D4A /* UsuarioController.m */; };
 		0073B12A1E23D0DA00F35B9E /* UsuarioControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0073B1291E23D0DA00F35B9E /* UsuarioControllerTests.m */; };
 		008914C51E20279E0057AC37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 008914C41E20279E0057AC37 /* main.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		001B6D621E301684008A33D6 /* CoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataController.h; sourceTree = "<group>"; };
+		001B6D631E301684008A33D6 /* CoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataController.m; sourceTree = "<group>"; };
 		0038B6CE1E212B5E002E9D4A /* UsuarioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsuarioController.h; sourceTree = "<group>"; };
 		0038B6CF1E212B5E002E9D4A /* UsuarioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsuarioController.m; sourceTree = "<group>"; };
 		0073B1291E23D0DA00F35B9E /* UsuarioControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsuarioControllerTests.m; sourceTree = "<group>"; };
@@ -199,6 +202,8 @@
 			children = (
 				0038B6CE1E212B5E002E9D4A /* UsuarioController.h */,
 				0038B6CF1E212B5E002E9D4A /* UsuarioController.m */,
+				001B6D621E301684008A33D6 /* CoreDataController.h */,
+				001B6D631E301684008A33D6 /* CoreDataController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -350,6 +355,7 @@
 				008915001E2045080057AC37 /* Usuario.m in Sources */,
 				008914D11E20279E0057AC37 /* CoreDataList.xcdatamodeld in Sources */,
 				0038B6D01E212B5E002E9D4A /* UsuarioController.m in Sources */,
+				001B6D641E301684008A33D6 /* CoreDataController.m in Sources */,
 				008914CB1E20279E0057AC37 /* ViewController.m in Sources */,
 				008914C81E20279E0057AC37 /* AppDelegate.m in Sources */,
 				008914C51E20279E0057AC37 /* main.m in Sources */,
