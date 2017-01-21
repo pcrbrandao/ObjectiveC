@@ -15,7 +15,7 @@
  */
 @interface UsuarioController : NSObject
 
-@property (nonatomic, retain)NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain)NSPersistentContainer *persistentContainer;
 
 -(NSError *)addUsuario:(Usuario *)usuario;
 -(NSError *)removeUsuarioID:(NSInteger)ID;

@@ -8,6 +8,8 @@
 
 #import "UsuarioController.h"
 #import "Textos.h"
+#import "AppDelegate.h"
+#import <UIKit/UIKit.h>
 
 #pragma mark Private Properties
 
@@ -32,33 +34,34 @@ static UsuarioController *sharedInstance = nil;
 +(UsuarioController *)sharedInstance {
     if (!sharedInstance) {
         
-        CoreDataController *coreDataController = [CoreDataController sharedInstance];
+        // CoreDataController *coreDataController = [CoreDataController sharedInstance];
+        
         sharedInstance = [[UsuarioController alloc] init];
         sharedInstance.usuarios = [sharedInstance usuarioList];
         if (sharedInstance.usuarios == nil) {
             sharedInstance.usuarios = [[NSMutableArray alloc] init];
         }
-        sharedInstance.managedObjectContext = [coreDataController managedObjectContext];
+        // sharedInstance.managedObjectContext = [coreDataController managedObjectContext];
     }
     return sharedInstance;
 }
 
 #pragma mark Public Methods
-/**
- * @brief Adiciona user
- */
-//-(NSError *)addUser:(UserMO *)user {
-    
-//    return nil;
-//}
 
+-(NSPersistentContainer *)persistentContainer {
+    if (!_persistentContainer) {
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        _persistentContainer = [appDelegate persistentContainer];
+    }
+    return _persistentContainer;
+}
 
 /**
  * @brief Adiciona usuario com nome e senha
  */
 -(NSError *)addUsuarioComNome:(NSString *)nome eSenha:(NSString *)senha {
     
-    Usuario *usuario = [Usuario NewUsuarioWithNome:nome andSenha:senha inManagedContext:self.managedObjectContext];
+    Usuario *usuario = [Usuario NewUsuarioWithNome:nome andSenha:senha inManagedContext:[self.persistentContainer viewContext]];
     NSError *err = [self addUsuario:usuario];
     
     if (!err) {
@@ -96,7 +99,7 @@ static UsuarioController *sharedInstance = nil;
         return err;
     }
     
-    if ([[self managedObjectContext] save:&err] == NO) {
+    if ([[self.persistentContainer viewContext] save:&err] == NO) {
         NSAssert(NO, @"Erro salvando contexto: %@\n%@", [err localizedDescription], [err userInfo]);
         return err;
     }
@@ -184,10 +187,10 @@ static UsuarioController *sharedInstance = nil;
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Usuario"];
     NSError *err = nil;
     
-    NSArray *resultado = [self.managedObjectContext executeFetchRequest:fetchRequest error:&err];
+    NSArray *resultado = [[self.persistentContainer viewContext] executeFetchRequest:fetchRequest error:&err];
     NSLog(@"\n\nTotal de itens em resultado....%d", [resultado count]);
-    for (NSObject *item in resultado) {
-        NSLog(@"\n\nitem recuperado...%@", item);
+    for (Usuario *usuario in resultado) {
+        NSLog(@"\n\nitem recuperado...%@", [usuario nome]);
     }
     
     if (err) {
