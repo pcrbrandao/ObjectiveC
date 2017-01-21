@@ -44,6 +44,7 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.usuariosTableView reloadData];
             });
+            return;
         }
         
         NSLog(@"\n\nHouve um erro aqui.... %@", err.localizedDescription);
@@ -65,7 +66,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     NSInteger rows = [self.usuarioController usuariosCount];
-    NSLog(@"\n\nLinhas na tabela....%d", rows);
     
     if (rows > 0) {
         return rows;
@@ -78,11 +78,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"dataCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    NSLog(@"\n\nconfigurando a cell...");
     cell.textLabel.text = @"Lista vazia...";
     
     NSInteger userCount = [self.usuarioController usuariosCount];
-    NSLog(@"\n\ncellForRow.... usuários na lista... %ld", (long)userCount);
     
     if (userCount > 0) {
         Usuario *usuario = [self.usuarioController usuarioID:indexPath.row];

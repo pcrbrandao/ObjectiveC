@@ -24,7 +24,7 @@
 
 -(Usuario *)usuarioID:(NSInteger)ID;
 -(Usuario *)usuarioNome:(NSString *)nome;
--(NSArray<Usuario *> *)usuarioList;
+-(NSMutableArray<Usuario *> *)usuarioList;
 -(NSInteger)usuariosCount;
 
 +(UsuarioController *)sharedInstance;

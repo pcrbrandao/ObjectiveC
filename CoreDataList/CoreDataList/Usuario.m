@@ -7,7 +7,6 @@
 //
 
 #import "Usuario.h"
-#import "CoreDataController.h"
 
 @implementation Usuario
 
@@ -15,13 +14,10 @@
 @synthesize nome;
 @synthesize senha;
 
-+(Usuario *)NewUsuarioWithNome:(NSString *)nome andSenha:(NSString *)senha {
++(Usuario *)NewUsuarioWithNome:(NSString *)nome andSenha:(NSString *)senha inManagedContext:(NSManagedObjectContext *)context {
     
-    // Usuario *usuario = [[Usuario alloc] init];
-    CoreDataController *dataController = [CoreDataController sharedInstance];
-    NSManagedObjectContext *context = [dataController managedObjectContext];
-    
-    Usuario *usuario = (Usuario *)[NSEntityDescription insertNewObjectForEntityForName:@"Usuario" inManagedObjectContext:context];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    Usuario *usuario = (Usuario *)[[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:context];
     
     [usuario setNome:nome];
     [usuario setSenha:senha];

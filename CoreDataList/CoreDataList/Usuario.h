@@ -15,6 +15,6 @@
 @property (nonatomic,retain)NSString *nome;
 @property (nonatomic,retain)NSString *senha;
 
-+(Usuario *)NewUsuarioWithNome:(NSString *)nome andSenha:(NSString *)senha;
++(Usuario *)NewUsuarioWithNome:(NSString *)nome andSenha:(NSString *)senha inManagedContext:(NSManagedObjectContext *)context;
 
 @end

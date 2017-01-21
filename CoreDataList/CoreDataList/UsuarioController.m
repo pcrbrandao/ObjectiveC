@@ -34,7 +34,10 @@ static UsuarioController *sharedInstance = nil;
         
         CoreDataController *coreDataController = [CoreDataController sharedInstance];
         sharedInstance = [[UsuarioController alloc] init];
-        sharedInstance.usuarios = [[NSMutableArray alloc] init];
+        sharedInstance.usuarios = [sharedInstance usuarioList];
+        if (sharedInstance.usuarios == nil) {
+            sharedInstance.usuarios = [[NSMutableArray alloc] init];
+        }
         sharedInstance.managedObjectContext = [coreDataController managedObjectContext];
     }
     return sharedInstance;
@@ -55,7 +58,7 @@ static UsuarioController *sharedInstance = nil;
  */
 -(NSError *)addUsuarioComNome:(NSString *)nome eSenha:(NSString *)senha {
     
-    Usuario *usuario = [Usuario NewUsuarioWithNome:nome andSenha:senha];
+    Usuario *usuario = [Usuario NewUsuarioWithNome:nome andSenha:senha inManagedContext:self.managedObjectContext];
     NSError *err = [self addUsuario:usuario];
     
     if (!err) {
@@ -95,6 +98,7 @@ static UsuarioController *sharedInstance = nil;
     
     if ([[self managedObjectContext] save:&err] == NO) {
         NSAssert(NO, @"Erro salvando contexto: %@\n%@", [err localizedDescription], [err userInfo]);
+        return err;
     }
     
     [self.usuarios addObject:usuario];
@@ -176,8 +180,25 @@ static UsuarioController *sharedInstance = nil;
 /**
  * @brief Obtém a lista de usuários.
  */
--(NSArray<Usuario *> *)usuarioList {
-    return (NSArray<Usuario *> *)self.usuarios;
+-(NSMutableArray<Usuario *> *)usuarioList {
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Usuario"];
+    NSError *err = nil;
+    
+    NSArray *resultado = [self.managedObjectContext executeFetchRequest:fetchRequest error:&err];
+    NSLog(@"\n\nTotal de itens em resultado....%d", [resultado count]);
+    for (NSObject *item in resultado) {
+        NSLog(@"\n\nitem recuperado...%@", item);
+    }
+    
+    if (err) {
+        NSLog(@"Erro tentando fetchRequest....%@", err.localizedDescription);
+        return nil;
+    }
+    
+    self.usuarios = (NSMutableArray<Usuario *> *)resultado;
+    NSLog(@"\n\nTudo certo! usuários lidos do db sem problemas....%d", [self.usuarios count]);
+    
+    return (NSMutableArray<Usuario *> *)self.usuarios;
 }
 
 /**

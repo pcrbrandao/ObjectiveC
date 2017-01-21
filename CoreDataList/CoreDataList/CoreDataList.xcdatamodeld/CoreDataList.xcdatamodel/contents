@@ -5,7 +5,8 @@
         <attribute name="nome" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="senha" attributeType="String" syncable="YES"/>
     </entity>
+    <fetchRequest name="Usuarios" entity="Usuario" predicateString="id &gt;= 0"/>
     <elements>
-        <element name="Usuario" positionX="-45" positionY="0" width="128" height="90"/>
+        <element name="Usuario" positionX="-45" positionY="0" width="128" height="30"/>
     </elements>
 </model>
