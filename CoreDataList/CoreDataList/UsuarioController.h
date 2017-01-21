@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "Usuario.h"
-#import "CoreDataController.h"
 
 /**
  * @brief Fornece métodos para acesso os dados de usuários. É um singleton.
