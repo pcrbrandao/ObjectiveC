@@ -8,14 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "Usuario.h"
+#import "CoreDataController.h"
 
 /**
  * @brief Fornece métodos para acesso os dados de usuários. É um singleton.
  */
 @interface UsuarioController : NSObject
-/**
- * @brief Requer um usuário válido e retorna nil se tudo correr bem.
- */
+
+@property (nonatomic, retain)NSManagedObjectContext *managedObjectContext;
+
 -(NSError *)addUsuario:(Usuario *)usuario;
 -(NSError *)removeUsuarioID:(NSInteger)ID;
 -(NSError *)updateUsuario:(Usuario *)usuario;

@@ -10,6 +10,15 @@
 
 @implementation CoreDataController
 
+static CoreDataController *sharedInstance = nil;
+
++ (CoreDataController *)sharedInstance {
+    if (!sharedInstance) {
+        sharedInstance = [[CoreDataController alloc] init];
+    }
+    return sharedInstance;
+}
+
 - (id) init {
     self = [super init];
     if (!self) {

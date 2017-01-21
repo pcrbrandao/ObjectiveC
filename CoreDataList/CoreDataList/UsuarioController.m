@@ -8,7 +8,6 @@
 
 #import "UsuarioController.h"
 #import "Textos.h"
-#import <CoreData/CoreData.h>
 
 #pragma mark Private Properties
 
@@ -17,6 +16,7 @@
  * @brief Provisioramente os dados serão armazenados nesse array.
  */
 @property (nonatomic,retain) NSMutableArray<Usuario *> *usuarios;
+
 @end
 
 /**
@@ -31,13 +31,25 @@ static UsuarioController *sharedInstance = nil;
  */
 +(UsuarioController *)sharedInstance {
     if (!sharedInstance) {
+        
+        CoreDataController *coreDataController = [CoreDataController sharedInstance];
         sharedInstance = [[UsuarioController alloc] init];
         sharedInstance.usuarios = [[NSMutableArray alloc] init];
+        sharedInstance.managedObjectContext = [coreDataController managedObjectContext];
     }
     return sharedInstance;
 }
 
 #pragma mark Public Methods
+/**
+ * @brief Adiciona user
+ */
+//-(NSError *)addUser:(UserMO *)user {
+    
+//    return nil;
+//}
+
+
 /**
  * @brief Adiciona usuario com nome e senha
  */
@@ -79,6 +91,10 @@ static UsuarioController *sharedInstance = nil;
     Usuario *existente = [self usuarioNome:usuario.nome];
     if (existente) {
         return err;
+    }
+    
+    if ([[self managedObjectContext] save:&err] == NO) {
+        NSAssert(NO, @"Erro salvando contexto: %@\n%@", [err localizedDescription], [err userInfo]);
     }
     
     [self.usuarios addObject:usuario];

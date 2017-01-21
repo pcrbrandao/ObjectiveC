@@ -14,5 +14,6 @@
 @property (strong) NSManagedObjectContext *managedObjectContext;
 
 - (void)initializeCoreData;
++ (CoreDataController *)sharedInstance;
 
 @end
