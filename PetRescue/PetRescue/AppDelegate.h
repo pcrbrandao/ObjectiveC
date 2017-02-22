@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  CoreDataList
+//  PetRescue
 //
-//  Created by Pedro Brandão on 06/01/17.
+//  Created by Pedro Brandão on 21/02/17.
 //  Copyright © 2017 Pedro Brandão. All rights reserved.
 //
 
@@ -12,10 +12,6 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (readonly, strong) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 

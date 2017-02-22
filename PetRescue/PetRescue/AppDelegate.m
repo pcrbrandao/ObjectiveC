@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  CoreDataList
+//  PetRescue
 //
-//  Created by Pedro Brandão on 06/01/17.
+//  Created by Pedro Brandão on 21/02/17.
 //  Copyright © 2017 Pedro Brandão. All rights reserved.
 //
 
@@ -52,45 +52,13 @@
 
 #pragma mark - Core Data stack
 
-@synthesize managedObjectContext = _managedObjectContext;
-@synthesize managedObjectModel = _managedObjectModel;
-@synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
-
 @synthesize persistentContainer = _persistentContainer;
-
-/**
- * @brief Retorna o managedObjectContext do app. No código do tutorial, ele é criado através do NSPersistentCoordinator.
- * Aqui, eu preferi usar o persistentContainer, que é gerado no código original da Apple.
- */
-- (NSManagedObjectContext *)managedObjectContext {
-    
-    if (!_managedObjectContext) {
-        _managedObjectContext = [self.persistentContainer viewContext];
-    }
-    
-    return _managedObjectContext;
-}
-
-
-/**
- * @brief Cria o NSPersistentStoreCoordinator. No código do tutorial ele é criado manualmente. O persistentContainer já contém ele pronto. Vou utilizá-lo.
- */
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
-    
-    if (_persistentStoreCoordinator != nil) {
-        return _persistentStoreCoordinator;
-    }
-    
-    _persistentStoreCoordinator = [self.persistentContainer persistentStoreCoordinator];
-    
-    return _persistentStoreCoordinator;
-}
 
 - (NSPersistentContainer *)persistentContainer {
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"CoreDataList"];
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"PetRescue"];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.
@@ -113,8 +81,6 @@
     
     return _persistentContainer;
 }
-
-
 
 #pragma mark - Core Data Saving support
 
