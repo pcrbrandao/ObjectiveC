@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		00D2B3351E5D09A6006DCABF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D2B3341E5D09A6006DCABF /* main.m */; };
 		00D2B3381E5D09A6006DCABF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D2B3371E5D09A6006DCABF /* AppDelegate.m */; };
-		00D2B33B1E5D09A7006DCABF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D2B33A1E5D09A7006DCABF /* ViewController.m */; };
+		00D2B33B1E5D09A7006DCABF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D2B33A1E5D09A7006DCABF /* LoginViewController.m */; };
 		00D2B33E1E5D09A7006DCABF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2B33C1E5D09A7006DCABF /* Main.storyboard */; };
 		00D2B3411E5D09A7006DCABF /* PetRescue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00D2B33F1E5D09A7006DCABF /* PetRescue.xcdatamodeld */; };
 		00D2B3431E5D09A7006DCABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D2B3421E5D09A7006DCABF /* Assets.xcassets */; };
@@ -40,8 +40,8 @@
 		00D2B3341E5D09A6006DCABF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00D2B3361E5D09A6006DCABF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00D2B3371E5D09A6006DCABF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		00D2B3391E5D09A7006DCABF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		00D2B33A1E5D09A7006DCABF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		00D2B3391E5D09A7006DCABF /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		00D2B33A1E5D09A7006DCABF /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		00D2B33D1E5D09A7006DCABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00D2B3401E5D09A7006DCABF /* PetRescue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetRescue.xcdatamodel; sourceTree = "<group>"; };
 		00D2B3421E5D09A7006DCABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,8 +105,8 @@
 			children = (
 				00D2B3361E5D09A6006DCABF /* AppDelegate.h */,
 				00D2B3371E5D09A6006DCABF /* AppDelegate.m */,
-				00D2B3391E5D09A7006DCABF /* ViewController.h */,
-				00D2B33A1E5D09A7006DCABF /* ViewController.m */,
+				00D2B3391E5D09A7006DCABF /* LoginViewController.h */,
+				00D2B33A1E5D09A7006DCABF /* LoginViewController.m */,
 				00D2B33C1E5D09A7006DCABF /* Main.storyboard */,
 				00D2B3421E5D09A7006DCABF /* Assets.xcassets */,
 				00D2B3441E5D09A7006DCABF /* LaunchScreen.storyboard */,
@@ -279,7 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00D2B33B1E5D09A7006DCABF /* ViewController.m in Sources */,
+				00D2B33B1E5D09A7006DCABF /* LoginViewController.m in Sources */,
 				00D2B3381E5D09A6006DCABF /* AppDelegate.m in Sources */,
 				00D2B3411E5D09A7006DCABF /* PetRescue.xcdatamodeld in Sources */,
 				00D2B3351E5D09A6006DCABF /* main.m in Sources */,
@@ -520,6 +520,7 @@
 				00D2B3621E5D09A7006DCABF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00D2B3631E5D09A7006DCABF /* Build configuration list for PBXNativeTarget "PetRescueTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +529,7 @@
 				00D2B3651E5D09A7006DCABF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00D2B3661E5D09A7006DCABF /* Build configuration list for PBXNativeTarget "PetRescueUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +538,7 @@
 				00D2B3681E5D09A7006DCABF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
