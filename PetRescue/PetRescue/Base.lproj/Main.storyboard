@@ -40,7 +40,7 @@
                                     <segue destination="iF3-L8-33H" kind="show" id="vA6-jF-r5k"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pet Rescue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wah-CU-5oq">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pet Amigo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wah-CU-5oq">
                                 <rect key="frame" x="0.0" y="72" width="320" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -86,7 +86,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Salvar um amigo"/>
+                                <state key="normal" title="SALVAR UM AMIGO"/>
                                 <connections>
                                     <segue destination="G9y-rJ-HkL" kind="show" id="BID-bc-uBJ"/>
                                 </connections>
@@ -128,24 +128,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyE-Ve-neT">
-                                <rect key="frame" x="16" y="505" width="288" height="55"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="Eew-NQ-aev"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="SAIR"/>
-                                <connections>
-                                    <segue destination="JGx-ka-HQ8" kind="unwind" unwindAction="retornaAoInicio:" id="BKP-cP-tc6"/>
-                                </connections>
-                            </button>
                             <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4NF-4D-rb6">
-                                <rect key="frame" x="16" y="188" width="288" height="272"/>
+                                <rect key="frame" x="16" y="113" width="288" height="435"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAG-QT-GG6">
-                                        <rect key="frame" x="0.0" y="0.0" width="131" height="30"/>
+                                        <rect key="frame" x="8" y="0.0" width="272" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <state key="normal" title="Animais de rua"/>
@@ -153,15 +140,15 @@
                                             <segue destination="4DA-W6-OKr" kind="show" id="bUE-TB-6ld"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Procurar ONGs que buscam para adoção" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRJ-WZ-vYb">
-                                        <rect key="frame" x="0.0" y="38" width="288" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Procurar ONGs que buscam para adoção" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRJ-WZ-vYb">
+                                        <rect key="frame" x="8" y="38" width="272" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nz3-mj-J8r">
-                                        <rect key="frame" x="0.0" y="67" width="250" height="30"/>
+                                        <rect key="frame" x="8" y="86" width="272" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <state key="normal" title="Encontrei abandonado e ferido"/>
@@ -169,22 +156,22 @@
                                             <segue destination="kYn-Hn-ENQ" kind="show" id="6LB-rK-6MM"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E não tenho condições de cuidar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJi-6P-rOA">
-                                        <rect key="frame" x="0.0" y="105" width="250" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E não tenho condições de cuidar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJi-6P-rOA">
+                                        <rect key="frame" x="8" y="124" width="272" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Não fique calado!! DENUNCIE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nn-7b-STD">
-                                        <rect key="frame" x="0.0" y="172" width="228" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Não fique calado!! DENUNCIE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nn-7b-STD">
+                                        <rect key="frame" x="8" y="191" width="272" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djx-Ce-snQ">
-                                        <rect key="frame" x="0.0" y="134" width="180" height="30"/>
+                                        <rect key="frame" x="8" y="153" width="272" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <state key="normal" title="Denunciar maus tratos"/>
@@ -193,7 +180,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yh-9P-iSK">
-                                        <rect key="frame" x="0.0" y="201" width="250" height="30"/>
+                                        <rect key="frame" x="8" y="220" width="272" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <state key="normal" title="Doar ração e/ou medicamento"/>
@@ -201,10 +188,22 @@
                                             <segue destination="XZl-eg-vCQ" kind="show" id="yv4-co-nfy"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNw-JN-3ah">
+                                        <rect key="frame" x="8" y="349" width="272" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Clínicas"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swg-yq-InU">
+                                        <rect key="frame" x="8" y="392" width="272" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="PetShops"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="272" id="2f9-4Y-elo"/>
+                                    <constraint firstAttribute="height" constant="435" id="2f9-4Y-elo"/>
                                     <constraint firstAttribute="width" constant="288" id="dl8-Dd-a32"/>
                                 </constraints>
                             </view>
@@ -219,13 +218,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4NF-4D-rb6" firstAttribute="centerY" secondItem="rZD-VI-56O" secondAttribute="centerY" constant="40" id="957-m3-ynG"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="QyE-Ve-neT" secondAttribute="leading" id="QUm-Ic-eJS"/>
-                            <constraint firstItem="HkO-nW-X2N" firstAttribute="top" secondItem="QyE-Ve-neT" secondAttribute="bottom" constant="8" id="gqS-Zq-GW1"/>
+                            <constraint firstItem="4NF-4D-rb6" firstAttribute="centerY" secondItem="rZD-VI-56O" secondAttribute="centerY" constant="46.5" id="957-m3-ynG"/>
                             <constraint firstItem="4NF-4D-rb6" firstAttribute="centerX" secondItem="rZD-VI-56O" secondAttribute="centerX" id="hAu-3C-wvo"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="QyE-Ve-neT" secondAttribute="trailing" id="rtk-fw-N5V"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Salvar" id="kgf-9z-hMZ">
+                        <barButtonItem key="rightBarButtonItem" image="Exit_000000_100" id="ust-LI-2xy">
+                            <connections>
+                                <segue destination="JGx-ka-HQ8" kind="unwind" unwindAction="retornaAoInicio:" id="v7Z-CB-rZ1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gwr-er-KMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="JGx-ka-HQ8" userLabel="Exit" sceneMemberID="exit"/>
@@ -257,7 +260,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AJp-TQ-tOp" id="inr-df-kRM">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="caoviver" translatesAutoresizingMaskIntoConstraints="NO" id="swP-tN-w70">
@@ -299,7 +302,7 @@
                                         <rect key="frame" x="0.0" y="108" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d4p-9X-kk1" id="7qV-iy-gv3">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rockbicho" translatesAutoresizingMaskIntoConstraints="NO" id="Xtg-2h-oAw">
@@ -566,7 +569,7 @@
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Confirma"/>
+                                <state key="normal" title="CONFIRMA"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -809,6 +812,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Exit_000000_100" width="37" height="37"/>
         <image name="Lock" width="37" height="37"/>
         <image name="Message" width="37" height="37"/>
         <image name="User" width="37" height="37"/>
