@@ -17,5 +17,6 @@
 @interface Strings : NSObject
 
 #define kUSUARIO_CONTROLLER @"UsuarioController"
+#define kADICIONA @"Adiciona"
 
 @end

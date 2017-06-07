@@ -32,9 +32,70 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testDeveAdicionarUmRegistroNaTabela {
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    NSString *nome = @"Pedro";
+    NSString *senha = @"1234";
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    
+    [app.textFields[@"nomeField"] typeText:nome];
+    [app.textFields[@"senhaField"] tap];
+    [app.textFields[@"senhaField"] typeText:senha];
+    [app.buttons[@"actionButton"] tap];
+    [app.textFields[@"nomeField"] tap];
+    
+    XCUIElement *cell = app.tables.cells.staticTexts[nome];
+    NSString *nomeObtido = cell.label;
+    
+    XCTAssert([nomeObtido isEqualToString:nome]);
+}
+
+- (void)testDeveInserirTresRegistros {
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    
+    NSArray *usuarios = @[
+  @{ @"nome": @"user1", @"senha": @"1234" },
+  @{ @"nome": @"user2", @"senha": @"2234" },
+  @{ @"nome": @"user3", @"senha": @"3234" } ];
+    
+    for( NSDictionary *user in usuarios) {
+        [app.textFields[@"nomeField"] tap];
+        [app.textFields[@"nomeField"] typeText:user[@"nome"]];
+        [app.textFields[@"senhaField"] tap];
+        [app.textFields[@"senhaField"] typeText:user[@"senha"]];
+        [app.buttons[@"actionButton"] tap];
+    }
+    
+    NSInteger cellsCount = [app.tables.cells count];
+    NSLog(@"\n\nQuantas linhas na tabela ? %d\n\n", cellsCount);
+
+    XCTAssert(cellsCount == 3);
+}
+
+- (void)testUsuarioDuplicadoOuEmBrancoNaoDeveSerAdicionado {
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    
+    NSArray *usuarios = @[
+                          @{ @"nome": @"user1", @"senha": @"1234" },
+                          @{ @"nome": @"user2", @"senha": @"2234" },
+                          @{ @"nome": @"user1", @"senha": @"3234" },
+                          @{ @"nome": @"", @"senha": @""}, ];
+    
+    for( NSDictionary *user in usuarios) {
+        [app.textFields[@"nomeField"] tap];
+        [app.textFields[@"nomeField"] typeText:user[@"nome"]];
+        [app.textFields[@"senhaField"] tap];
+        [app.textFields[@"senhaField"] typeText:user[@"senha"]];
+        [app.buttons[@"actionButton"] tap];
+    }
+    
+    NSInteger cellsCount = [app.tables.cells count];
+    NSLog(@"\n\nQuantas linhas na tabela ? %d\n\n", cellsCount);
+    
+    XCTAssert(cellsCount == 2);
 }
 
 @end

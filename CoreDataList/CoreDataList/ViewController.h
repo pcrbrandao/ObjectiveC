@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UsuarioController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UILabel *idLabel;
+@property (weak, nonatomic) IBOutlet UITextField *nomeField;
+@property (weak, nonatomic) IBOutlet UITextField *senhaField;
+@property (weak, nonatomic) IBOutlet UIButton *actionButton;
+
+@property (weak, nonatomic) IBOutlet UITableView *usuariosTableView;
+
+- (IBAction)doAction:(UIButton *)sender;
 
 @end
 

@@ -10,9 +10,15 @@
 
 @implementation Usuario
 
-+(Usuario *)NewUsuarioWithNome:(NSString *)nome andSenha:(NSString *)senha {
+@synthesize ID;
+@synthesize nome;
+@synthesize senha;
+
++(Usuario *)NewUsuarioWithNome:(NSString *)nome andSenha:(NSString *)senha inManagedContext:(NSManagedObjectContext *)context {
     
-    Usuario *usuario = [[Usuario alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    Usuario *usuario = (Usuario *)[[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:context];
+    
     [usuario setNome:nome];
     [usuario setSenha:senha];
     
