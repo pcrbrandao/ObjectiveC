@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  FlagQuiz
+
+  Created by Pedro Brandão on 23/08/17.
+  Copyright © 2017 Pedro Brandão. All rights reserved.
+*/
+
+"number_of_choices" = "Number of Choices";
+"number_of_choices_description" = "Display 2, 4, 6 or 8 guess buttons";
+"world_regions" = "Regions";
+"world_regions_description" = "Regions to include in the quiz";
+"guess_country" = "Guess the Country";
+"results" = "%1$d guesses, %2$.02f%% correct";
+"incorrect_answer" = "Incorrect!";
+"default_region_message" = "One region must be selected. Setting North America as the default region.";
+"restarting_quiz" = "Quiz will restart with your new settings";
+"question" = "Question %1$d of %2$d";
+"reset_quiz" = "Reset Quiz";
+"image_description" = "Image of the current flag in the quiz";
+"default_region" = "North_America";
