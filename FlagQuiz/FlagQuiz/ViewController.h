@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *bandeira;
+
+- (IBAction)tap:(id)sender;
 
 @end
 

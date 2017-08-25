@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00299C271F5060DC00373AD1 /* colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00299C261F5060DC00373AD1 /* colors.plist */; };
+		00299C2B1F50630700373AD1 /* FQButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00299C2A1F50630700373AD1 /* FQButton.m */; };
+		00299C2E1F506FDC00373AD1 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 00299C2D1F506FDC00373AD1 /* UIColor+HexString.m */; };
+		00299C301F508B4B00373AD1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 00299C2F1F508B4B00373AD1 /* Podfile */; };
 		0032C74D1F4DB94900CB9E39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0032C74C1F4DB94900CB9E39 /* main.m */; };
 		0032C7501F4DB94900CB9E39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0032C74F1F4DB94900CB9E39 /* AppDelegate.m */; };
 		0032C7531F4DB94900CB9E39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0032C7521F4DB94900CB9E39 /* ViewController.m */; };
@@ -17,6 +21,7 @@
 		0032C7711F4DB94900CB9E39 /* FlagQuizUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0032C7701F4DB94900CB9E39 /* FlagQuizUITests.m */; };
 		0032C77F1F4DC08A00CB9E39 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0032C77E1F4DC08A00CB9E39 /* Localizable.strings */; };
 		0032C7821F4DC3FC00CB9E39 /* array.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0032C7811F4DC3FC00CB9E39 /* array.plist */; };
+		CA543CD6216E826345A975C6 /* Pods_FlagQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA319AA80C599FBBA9BBFFA7 /* Pods_FlagQuiz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00299C261F5060DC00373AD1 /* colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors.plist; sourceTree = "<group>"; };
+		00299C291F50630700373AD1 /* FQButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQButton.h; sourceTree = "<group>"; };
+		00299C2A1F50630700373AD1 /* FQButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQButton.m; sourceTree = "<group>"; };
+		00299C2C1F506FDC00373AD1 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		00299C2D1F506FDC00373AD1 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		00299C2F1F508B4B00373AD1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0032C7481F4DB94900CB9E39 /* FlagQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlagQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0032C74C1F4DB94900CB9E39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0032C74E1F4DB94900CB9E39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,6 +66,9 @@
 		0032C7721F4DB94900CB9E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0032C77E1F4DC08A00CB9E39 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0032C7811F4DC3FC00CB9E39 /* array.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = array.plist; sourceTree = "<group>"; };
+		06321FF85E7234FAA7DC646F /* Pods-FlagQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlagQuiz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlagQuiz/Pods-FlagQuiz.debug.xcconfig"; sourceTree = "<group>"; };
+		09654F63918CA102E869DF05 /* Pods-FlagQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlagQuiz.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlagQuiz/Pods-FlagQuiz.release.xcconfig"; sourceTree = "<group>"; };
+		FA319AA80C599FBBA9BBFFA7 /* Pods_FlagQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlagQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA543CD6216E826345A975C6 /* Pods_FlagQuiz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +97,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00299C281F50627D00373AD1 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				00299C291F50630700373AD1 /* FQButton.h */,
+				00299C2A1F50630700373AD1 /* FQButton.m */,
+				00299C2C1F506FDC00373AD1 /* UIColor+HexString.h */,
+				00299C2D1F506FDC00373AD1 /* UIColor+HexString.m */,
+			);
+			name = UIElements;
+			sourceTree = "<group>";
+		};
+		002E3D6A1F508C83001980D7 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				00299C2F1F508B4B00373AD1 /* Podfile */,
+				0032C74E1F4DB94900CB9E39 /* AppDelegate.h */,
+				0032C74F1F4DB94900CB9E39 /* AppDelegate.m */,
+				0032C75C1F4DB94900CB9E39 /* Info.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
 		0032C73F1F4DB94800CB9E39 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +126,8 @@
 				0032C7641F4DB94900CB9E39 /* FlagQuizTests */,
 				0032C76F1F4DB94900CB9E39 /* FlagQuizUITests */,
 				0032C7491F4DB94900CB9E39 /* Products */,
+				5A5B9A4925E465A790FF3F37 /* Pods */,
+				2B8BCAF3446AABF4F8750ABE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,14 +144,13 @@
 		0032C74A1F4DB94900CB9E39 /* FlagQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				0032C74E1F4DB94900CB9E39 /* AppDelegate.h */,
-				0032C74F1F4DB94900CB9E39 /* AppDelegate.m */,
+				002E3D6A1F508C83001980D7 /* Config */,
+				00299C281F50627D00373AD1 /* UIElements */,
 				0032C7511F4DB94900CB9E39 /* ViewController.h */,
 				0032C7521F4DB94900CB9E39 /* ViewController.m */,
 				0032C7541F4DB94900CB9E39 /* Main.storyboard */,
 				0032C7801F4DC09D00CB9E39 /* Resources */,
 				0032C7591F4DB94900CB9E39 /* LaunchScreen.storyboard */,
-				0032C75C1F4DB94900CB9E39 /* Info.plist */,
 				0032C74B1F4DB94900CB9E39 /* Supporting Files */,
 			);
 			path = FlagQuiz;
@@ -150,8 +188,26 @@
 				0032C7571F4DB94900CB9E39 /* Assets.xcassets */,
 				0032C77E1F4DC08A00CB9E39 /* Localizable.strings */,
 				0032C7811F4DC3FC00CB9E39 /* array.plist */,
+				00299C261F5060DC00373AD1 /* colors.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		2B8BCAF3446AABF4F8750ABE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA319AA80C599FBBA9BBFFA7 /* Pods_FlagQuiz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A5B9A4925E465A790FF3F37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06321FF85E7234FAA7DC646F /* Pods-FlagQuiz.debug.xcconfig */,
+				09654F63918CA102E869DF05 /* Pods-FlagQuiz.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0032C7751F4DB94900CB9E39 /* Build configuration list for PBXNativeTarget "FlagQuiz" */;
 			buildPhases = (
+				49A0BBC7766F8E4153E12B20 /* [CP] Check Pods Manifest.lock */,
 				0032C7441F4DB94800CB9E39 /* Sources */,
 				0032C7451F4DB94800CB9E39 /* Frameworks */,
 				0032C7461F4DB94800CB9E39 /* Resources */,
+				F6A7C00F8D8EEBE742E99E25 /* [CP] Embed Pods Frameworks */,
+				2ABDACC9C41DBE87C98150F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,10 +322,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00299C271F5060DC00373AD1 /* colors.plist in Resources */,
 				0032C75B1F4DB94900CB9E39 /* LaunchScreen.storyboard in Resources */,
 				0032C7821F4DC3FC00CB9E39 /* array.plist in Resources */,
 				0032C77F1F4DC08A00CB9E39 /* Localizable.strings in Resources */,
 				0032C7581F4DB94900CB9E39 /* Assets.xcassets in Resources */,
+				00299C301F508B4B00373AD1 /* Podfile in Resources */,
 				0032C7561F4DB94900CB9E39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,11 +348,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2ABDACC9C41DBE87C98150F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlagQuiz/Pods-FlagQuiz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49A0BBC7766F8E4153E12B20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A7C00F8D8EEBE742E99E25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlagQuiz/Pods-FlagQuiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0032C7441F4DB94800CB9E39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00299C2E1F506FDC00373AD1 /* UIColor+HexString.m in Sources */,
+				00299C2B1F50630700373AD1 /* FQButton.m in Sources */,
 				0032C7531F4DB94900CB9E39 /* ViewController.m in Sources */,
 				0032C7501F4DB94900CB9E39 /* AppDelegate.m in Sources */,
 				0032C74D1F4DB94900CB9E39 /* main.m in Sources */,
@@ -441,8 +552,10 @@
 		};
 		0032C7761F4DB94900CB9E39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06321FF85E7234FAA7DC646F /* Pods-FlagQuiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = U3A2WCJ8XS;
 				INFOPLIST_FILE = FlagQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -453,8 +566,10 @@
 		};
 		0032C7771F4DB94900CB9E39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09654F63918CA102E869DF05 /* Pods-FlagQuiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = U3A2WCJ8XS;
 				INFOPLIST_FILE = FlagQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -532,6 +647,7 @@
 				0032C7771F4DB94900CB9E39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0032C7781F4DB94900CB9E39 /* Build configuration list for PBXNativeTarget "FlagQuizTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +656,7 @@
 				0032C77A1F4DB94900CB9E39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0032C77B1F4DB94900CB9E39 /* Build configuration list for PBXNativeTarget "FlagQuizUITests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +665,7 @@
 				0032C77D1F4DB94900CB9E39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>incorrect_answer</key>
+	<string>#FF0000</string>
+	<key>correct_answer</key>
+	<string>#00CC00</string>
+	<key>colorAccent</key>
+	<string>#448AFF</string>
+	<key>colorPrimaryDark</key>
+	<string>#303F9F</string>
+	<key>colorPrimary</key>
+	<string>#3F51B5</string>
+</dict>
+</plist>

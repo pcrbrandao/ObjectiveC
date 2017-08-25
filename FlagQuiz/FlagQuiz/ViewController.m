@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <pop/POP.h>
 
 @interface ViewController ()
 
@@ -16,7 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 
@@ -26,4 +26,15 @@
 }
 
 
+- (IBAction)tap:(id)sender {
+    
+    POPSpringAnimation *shake = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerRotation];
+    
+    shake.fromValue = @(M_PI / 10);
+    shake.toValue = @(0);
+    shake.springBounciness = 20;
+    shake.velocity = @(10);
+    
+    [self.bandeira.layer pop_addAnimation:shake forKey:@"shake"];
+}
 @end

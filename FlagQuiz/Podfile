@@ -1,0 +1,6 @@
+platform :ios, '10.2'
+use_frameworks!
+
+target 'FlagQuiz' do
+   pod 'pop', '~> 1.0'
+end
